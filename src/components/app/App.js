@@ -6,7 +6,7 @@ function App() {
     <header className="header">
       <div className="heading-primary">
         <span className="heading-primary-main">David Kim</span>
-        <span className="heading-primary-sub">Interactive resume</span>
+        <span className="heading-primary-sub">Interactisdve resume</span>
       </div>
     </header>
   );
