@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
-    <header className="header">
-      <div className="heading-primary">
-        <span className="heading-primary-main">David Kim</span>
-        <span className="heading-primary-sub">Interactisdve resume</span>
+    <header className="heading">
+      <div className="heading__primary">
+        <span className="heading__primary-main">David Kim</span>
+        <span className="heading__primary-sub">Interactive resume</span>
       </div>
     </header>
   );
