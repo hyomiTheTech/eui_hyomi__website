@@ -1,14 +1,17 @@
 import React from "react";
-import "./heading.scss";
+import "./IntroPage.scss";
 
 function Heading() {
   return (
-    <header className="heading">
+    <div className="wrapper">
       <div className="heading__primary">
         <span className="heading__primary-main">David Kim</span>
         <span className="heading__primary-sub">Interactives resume</span>
       </div>
-    </header>
+      {/* <a href="https://www.linkedin.com/in/euihyun-david-kim/">
+        <img src="./Linkedin_1.svg" alt="LinkedIn logo" />
+      </a> */}
+    </div>
   );
 }
 

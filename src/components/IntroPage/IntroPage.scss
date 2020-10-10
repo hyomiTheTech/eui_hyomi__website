@@ -1,4 +1,4 @@
-.heading {
+.wrapper {
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     fixed url("../../assets/images/mainImage.jpg");
@@ -12,39 +12,43 @@
   animation-name: moveInUp;
   animation-duration: 1s;
   animation-timing-function: ease-in;
+}
+.heading__primary {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10rem;
+  border: 1px solid #ffffff;
+  border-color: rgba(220, 255, 255, 0.35);
 
-  &__primary {
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10rem;
-    border: 1px solid #ffffff;
-    border-color: rgba(220, 255, 255, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  animation-name: moveInDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
 
-    animation-name: moveInDown;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-
-    &-main {
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 1.3rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #ffffff;
-      border-bottom-color: rgba(255, 255, 255, 0.35);
-    }
-
-    &-sub {
-      display: block;
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 1rem;
-      padding-top: 0.7rem;
-    }
+  &-main {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.35);
   }
+
+  &-sub {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    padding-top: 0.7rem;
+  }
+}
+
+.logo_container {
+  width: 20rem;
+  height: 20rem;
 }
 
 @keyframes moveInDown {

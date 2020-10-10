@@ -1,8 +1,8 @@
 import React from "react";
-import Heading from "../heading";
+import IntroPage from "../IntroPage";
 
 function App() {
-  return <Heading />;
+  return <IntroPage />;
 }
 
 export default App;
