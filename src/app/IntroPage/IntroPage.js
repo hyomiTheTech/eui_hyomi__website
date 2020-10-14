@@ -1,5 +1,6 @@
 import React from "react";
-import "./IntroPage.scss";
+
+import LogoContainer from "./LogoContainer";
 
 function Heading() {
   return (
@@ -8,9 +9,7 @@ function Heading() {
         <span className="heading__primary-main">David Kim</span>
         <span className="heading__primary-sub">Interactives resume</span>
       </div>
-      {/* <a href="https://www.linkedin.com/in/euihyun-david-kim/">
-        <img src="./Linkedin_1.svg" alt="LinkedIn logo" />
-      </a> */}
+      <LogoContainer />
     </div>
   );
 }
