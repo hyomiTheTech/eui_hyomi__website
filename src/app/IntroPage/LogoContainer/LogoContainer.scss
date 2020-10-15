@@ -1,4 +1,5 @@
 .logo-container {
-  width: 15rem;
-  height: 5rem;
+  grid-area: logo;
+  display: flex;
+  justify-content: space-between;
 }
