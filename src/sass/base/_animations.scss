@@ -34,3 +34,32 @@
     transform: translateY(0);
   }
 }
+
+@keyframes blinkingPointer {
+  from {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(1rem);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+}
+
+@keyframes logoStart {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

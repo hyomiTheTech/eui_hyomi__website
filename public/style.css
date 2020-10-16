@@ -21,15 +21,34 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes blinkingPointer {
+  from {
+    transform: translateY(0);
+    opacity: 0.25; }
+  50% {
+    transform: translateY(1rem);
+    opacity: 1; }
+  to {
+    transform: translateY(0);
+    opacity: 0.25; } }
+
+@keyframes logoStart {
+  from {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .wrapper {
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-columns: 17rem 1fr 1.5fr 1fr 15rem 2rem;
-  grid-template-rows: 2rem 5rem 1fr 1.5fr 1fr 7rem;
-  grid-template-areas: ". . . . . . " ". . . . logo ." ". . . . . . " ". . header . . ." ". . . . . ." ". . . . . . ";
+  grid-template-columns: 17rem 1fr 0.6fr 0.3fr 0.6fr 1fr 15rem 2rem;
+  grid-template-rows: 2rem 5rem 1fr 1.5fr 1fr 3rem 4rem;
+  grid-template-areas: ". . . . . . . . " ". . . . . . logo ." ". . . . . . . . " ". . header header header . . ." ". . . . . . . ." ". . . scroll . . . . " ". . . down-arrow . . . .";
   user-select: none;
   animation-name: moveInUp;
   animation-duration: 1s;
@@ -62,11 +81,29 @@
     letter-spacing: 1rem;
     padding-top: 0.7rem; }
 
-.logo_container {
-  width: 20rem;
-  height: 20rem; }
+.scroll-button {
+  grid-area: scroll;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  display: grid;
+  justify-self: center;
+  cursor: pointer;
+  animation: logoStart 4s;
+  animation-direction: normal; }
+  .scroll-button:hover ~ .down-arrow {
+    animation: blinkingPointer 2s infinite;
+    display: grid; }
+
+.down-arrow {
+  display: none;
+  justify-self: center;
+  grid-area: down-arrow;
+  height: 3rem; }
 
 .logo-container {
+  animation: logoStart 4s;
   grid-area: logo;
   display: flex;
   justify-content: space-between; }

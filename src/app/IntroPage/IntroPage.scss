@@ -5,15 +5,16 @@
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-columns: 17rem 1fr 1.5fr 1fr 15rem 2rem;
-  grid-template-rows: 2rem 5rem 1fr 1.5fr 1fr 7rem;
+  grid-template-columns: 17rem 1fr 0.6fr 0.3fr 0.6fr 1fr 15rem 2rem;
+  grid-template-rows: 2rem 5rem 1fr 1.5fr 1fr 3rem 4rem;
   grid-template-areas:
-    ". . . . . . "
-    ". . . . logo ."
-    ". . . . . . "
-    ". . header . . ."
-    ". . . . . ."
-    ". . . . . . ";
+    ". . . . . . . . "
+    ". . . . . . logo ."
+    ". . . . . . . . "
+    ". . header header header . . ."
+    ". . . . . . . ."
+    ". . . scroll . . . . "
+    ". . . down-arrow . . . .";
 
   user-select: none;
 
@@ -25,7 +26,7 @@
   color: $color-white;
   text-transform: uppercase;
   border: 1px solid $color-white;
-  border-color: rgba(220, 255, 255, 0.35);
+  border-color: $color-border-white;
   grid-area: header;
   display: flex;
   flex-direction: column;
@@ -54,7 +55,28 @@
   }
 }
 
-.logo_container {
-  width: 20rem;
-  height: 20rem;
+.scroll-button {
+  grid-area: scroll;
+  color: $color-white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  // border-bottom: 1px solid $color-border-white;
+  display: grid;
+  justify-self: center;
+  cursor: pointer;
+  animation: logoStart 4s;
+  animation-direction: normal;
+
+  &:hover ~ .down-arrow {
+    animation: blinkingPointer 2s infinite;
+    display: grid;
+  }
+}
+
+.down-arrow {
+  display: none;
+  justify-self: center;
+  grid-area: down-arrow;
+  height: 3rem;
 }
