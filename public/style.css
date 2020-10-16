@@ -27,9 +27,9 @@
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-columns: 2rem 15rem repeat(3, 1fr) 15rem 2rem;
-  grid-template-rows: 2rem 5rem repeat(3, 1fr) 5rem 2rem;
-  grid-template-areas: ". . . . . . . " ". . . . . logo ." ". . . . . . . " ". . . header . . ." ". . . . . . ." ". . . . . . . " ". . . . . . . ";
+  grid-template-columns: 17rem 1fr 1.5fr 1fr 15rem 2rem;
+  grid-template-rows: 2rem 5rem 1fr 1.5fr 1fr 7rem;
+  grid-template-areas: ". . . . . . " ". . . . logo ." ". . . . . . " ". . header . . ." ". . . . . ." ". . . . . . ";
   user-select: none;
   animation-name: moveInUp;
   animation-duration: 1s;
@@ -70,6 +70,14 @@
   grid-area: logo;
   display: flex;
   justify-content: space-between; }
+  .logo-container:hover .logo {
+    opacity: 0.3;
+    transition: 0.5s; }
+
+.logo {
+  transition: 0.5s; }
+  .logo:hover {
+    opacity: 1 !important; }
 
 * {
   margin: 0;
