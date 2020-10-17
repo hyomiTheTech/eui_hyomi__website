@@ -1,8 +1,16 @@
 import React from "react";
 import IntroPage from "./IntroPage";
+import AboutMe from "./AboutMe";
 
 function App() {
-  return <IntroPage />;
+  return (
+    <div>
+      <IntroPage />
+      <main>
+        <AboutMe />
+      </main>
+    </div>
+  );
 }
 
 export default App;
