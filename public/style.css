@@ -1,12 +1,133 @@
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50x); }
+  50% {
+    opacity: 0; }
+  70% {
+    opacity: 0.4;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50x); }
+  80% {
+    transform: translateY(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes blinkingPointer {
+  from {
+    transform: translateY(0);
+    opacity: 0.25; }
+  50% {
+    transform: translateY(1rem);
+    opacity: 1; }
+  to {
+    transform: translateY(0);
+    opacity: 0.25; } }
+
+@keyframes logoStart {
+  from {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.wrapper {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
+  background-size: cover;
+  background-position: top;
+  display: grid;
+  grid-template-columns: 17rem 1fr 0.6fr 0.3fr 0.6fr 1fr 15rem 2rem;
+  grid-template-rows: 2rem 5rem 1fr 1.5fr 1fr 3rem 4rem;
+  grid-template-areas: ". . . . . . . . " ". . . . . . logo ." ". . . . . . . . " ". . header header header . . ." ". . . . . . . ." ". . . scroll . . . . " ". . . down-arrow . . . .";
+  user-select: none;
+  animation-name: moveInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in; }
+
+.heading__primary {
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-color: rgba(220, 255, 255, 0.35);
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: moveInDown;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; }
+  .heading__primary-main {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.35); }
+  .heading__primary-sub {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    padding-top: 0.7rem; }
+
+.scroll-button {
+  grid-area: scroll;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  display: grid;
+  justify-self: center;
+  cursor: pointer;
+  animation: logoStart 4s;
+  animation-direction: normal; }
+  .scroll-button:hover ~ .down-arrow {
+    animation: blinkingPointer 2s infinite;
+    display: grid; }
+
+.down-arrow {
+  display: none;
+  justify-self: center;
+  grid-area: down-arrow;
+  height: 3rem; }
+
+.logo-container {
+  animation: logoStart 4s;
+  grid-area: logo;
+  display: flex;
+  justify-content: space-between; }
+  .logo-container:hover .logo {
+    opacity: 0.3;
+    transition: 0.5s; }
+
+.logo {
+  transition: 0.5s; }
+  .logo:hover {
+    opacity: 1 !important; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-}
+  box-sizing: inherit; }
