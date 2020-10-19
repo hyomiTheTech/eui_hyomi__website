@@ -42,7 +42,7 @@
 
 .wrapper {
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
   display: grid;
@@ -115,6 +115,25 @@
   transition: 0.5s; }
   .logo:hover {
     opacity: 1 !important; }
+
+.section-about-me {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3; }
+
+.profile {
+  filter: grayscale(100%);
+  height: 40rem;
+  width: 40rem;
+  margin: 8rem; }
+
+.about-me {
+  font-size: 2.5rem;
+  opacity: 0.5;
+  width: 80rem; }
 
 * {
   margin: 0;
