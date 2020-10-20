@@ -1,6 +1,7 @@
 import React from "react";
 import IntroPage from "./IntroPage";
 import AboutMe from "./AboutMe";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <IntroPage />
       <main>
         <AboutMe />
+        <Portfolio />
       </main>
     </div>
   );
