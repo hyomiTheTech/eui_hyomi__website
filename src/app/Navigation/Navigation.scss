@@ -4,11 +4,11 @@
   }
 
   &__button {
-    height: 7rem;
+    height: rem;
     width: 7rem;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 1.5rem;
+    right: 1.5rem;
     border-radius: 50%;
     z-index: 2000;
     text-align: center;
@@ -32,13 +32,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    opacity: 1;
+    list-style-type: none;
+    color: white;
+    font-size: 5rem;
   }
 
   &__item {
+    padding: 1rem 20rem;
+
+    &:hover {
+      background-color: gray;
+      transition: 0.5s;
+    }
   }
 
   &__link {
+    color: white;
+    text-decoration: none;
   }
 
   &__checkbox:checked ~ &__nav {
@@ -100,6 +110,7 @@
 }
 
 .blur {
-  filter: blur(2rem);
+  filter: blur(3rem);
   transition: $transition-navigation;
+  background-color: gray;
 }

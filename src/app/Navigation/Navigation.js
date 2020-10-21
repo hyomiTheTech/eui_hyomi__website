@@ -6,10 +6,19 @@ const Navigation = () => {
   const CheckboxHandler = () => {
     isChecked(!checked);
     const wrapper = document.getElementById("page-wrapper");
+
     if (!checked) {
       wrapper.classList.add("blur");
+      //   setTimeout(() => {
+      //     document.body.style.overflow = "hidden";
+      //     document.body.style.paddingRight = "15px";
+      //   }, 150);
     } else {
       wrapper.classList.remove("blur");
+      //   setTimeout(() => {
+      //     document.body.style.paddingRight = "0";
+      //     document.body.style.overflow = "auto";
+      //   }, 180);
     }
   };
 
@@ -33,22 +42,22 @@ const Navigation = () => {
         <ul className="navigation__list">
           <li className="navigation__item">
             <a href="#" className="navigation__link">
-              <span>01</span>HOME
+              HOME
             </a>
           </li>
           <li className="navigation__item">
             <a href="#" className="navigation__link">
-              <span>02</span>ABOUT ME
+              ABOUT ME
             </a>
           </li>
           <li className="navigation__item">
             <a href="#" className="navigation__link">
-              <span>03</span>PORTFOLIO
+              PORTFOLIO
             </a>
           </li>
           <li className="navigation__item">
             <a href="#" className="navigation__link">
-              <span>04</span>CONTACT ME
+              CONTACT ME
             </a>
           </li>
         </ul>

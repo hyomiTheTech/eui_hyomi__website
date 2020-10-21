@@ -1,5 +1,5 @@
 @import "sass/base/animations";
-@import "sass/abstracts//variables";
+@import "sass/abstracts/variables";
 
 @import "app/IntroPage/IntroPage";
 @import "app/IntroPage/LogoContainer/LogoContainer";
@@ -28,4 +28,5 @@ body {
 
 #page-wrapper {
   transition: $transition-navigation;
+  backface-visibility: hidden;
 }

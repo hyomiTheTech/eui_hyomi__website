@@ -5,7 +5,7 @@ import LogoContainer from "./LogoContainer";
 function Heading() {
   return (
     <header className="wrapper">
-      <LogoContainer />
+      {/* <LogoContainer /> */}
       <div className="heading__primary">
         <span className="heading__primary-main">&nbsp;David Kim</span>
         <span className="heading__primary-sub">SOFTWARE ENGINEER</span>
