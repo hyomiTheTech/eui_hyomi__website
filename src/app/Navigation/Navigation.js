@@ -41,22 +41,22 @@ const Navigation = () => {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#home" className="navigation__link">
               HOME
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
-              ABOUT ME
+            <a href="#about" className="navigation__link">
+              ABOUT
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#portfolio" className="navigation__link">
               PORTFOLIO
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#contact" className="navigation__link">
               CONTACT ME
             </a>
           </li>
