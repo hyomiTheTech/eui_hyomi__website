@@ -5,7 +5,7 @@
 @import "app/IntroPage/LogoContainer/LogoContainer";
 @import "app/AboutMe/AboutMe";
 @import "app/Portfolio/Portfolio";
-@import "app/Navigation/Navigation.scss";
+@import "app/Navigation/Navigation";
 
 * {
   margin: 0;
@@ -24,4 +24,8 @@ body {
   font-size: 16px;
   line-height: 1.7;
   box-sizing: inherit;
+}
+
+#page-wrapper {
+  transition: $transition-navigation;
 }

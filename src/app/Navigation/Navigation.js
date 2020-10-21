@@ -5,11 +5,11 @@ const Navigation = () => {
 
   const CheckboxHandler = () => {
     isChecked(!checked);
-    const wrapper = document.getElementsByClassName("wrapper");
+    const wrapper = document.getElementById("page-wrapper");
     if (!checked) {
-      wrapper[0].classList.add("blur");
+      wrapper.classList.add("blur");
     } else {
-      wrapper[0].classList.remove("blur");
+      wrapper.classList.remove("blur");
     }
   };
 
@@ -28,8 +28,6 @@ const Navigation = () => {
       >
         <span className="navigation__icon">&nbsp;</span>
       </label>
-
-      <div className="navigation__background">&nbsp;</div>
 
       <nav className="navigation__nav">
         <ul className="navigation__list">

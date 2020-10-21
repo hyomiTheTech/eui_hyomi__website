@@ -6,14 +6,16 @@ import Portfolio from "./Portfolio";
 
 function App() {
   return (
-    <div>
+    <>
       <Navigation />
-      <IntroPage />
-      <main>
-        <AboutMe />
-        <Portfolio />
-      </main>
-    </div>
+      <div id="page-wrapper">
+        <IntroPage />
+        <main>
+          <AboutMe />
+          <Portfolio />
+        </main>
+      </div>
+    </>
   );
 }
 

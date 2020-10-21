@@ -4,7 +4,6 @@
   }
 
   &__button {
-    background-color: white;
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -16,25 +15,15 @@
     cursor: pointer;
   }
 
-  &__background {
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
-    background-color: white;
-    z-index: 1;
-  }
-
   &__nav {
     height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: -1;
     opacity: 0;
+    transition: $transition-navigation;
   }
 
   &__list {
@@ -53,10 +42,64 @@
   }
 
   &__checkbox:checked ~ &__nav {
+    z-index: 2;
     opacity: 1;
+    transition: $transition-navigation;
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3.5rem;
+      height: 2px;
+      background-color: gray;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      top: 1rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1.3rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1.3rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }
 
 .blur {
   filter: blur(2rem);
+  transition: $transition-navigation;
 }
