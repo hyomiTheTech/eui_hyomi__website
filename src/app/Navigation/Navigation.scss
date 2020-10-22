@@ -1,6 +1,6 @@
 .navigation {
   &__checkbox {
-    // display: none;
+    display: none;
   }
 
   &__button {
@@ -10,7 +10,7 @@
     top: 1.5rem;
     right: 1.5rem;
     border-radius: 50%;
-    z-index: 2000;
+    z-index: 3;
     text-align: center;
     cursor: pointer;
   }
@@ -113,8 +113,4 @@
   filter: blur(3rem);
   transition: $transition-navigation;
   background-color: gray;
-}
-
-.testing {
-  z-index: 2010;
 }
