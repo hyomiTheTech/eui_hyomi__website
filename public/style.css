@@ -167,7 +167,7 @@
   display: none; }
 
 .navigation__button {
-  height: rem;
+  height: 7rem;
   width: 7rem;
   position: fixed;
   top: 1.5rem;
@@ -195,17 +195,27 @@
   text-align: center;
   list-style-type: none;
   color: white;
-  font-size: 5rem; }
+  font-size: 5rem;
+  height: 50rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
 
 .navigation__item {
-  padding: 1rem 20rem; }
-  .navigation__item:hover {
-    background-color: gray;
-    transition: 0.5s; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% / 6); }
 
 .navigation__link {
+  height: 100%;
+  width: 100%;
   color: white;
   text-decoration: none; }
+  .navigation__link:hover {
+    background-color: gray;
+    transition: 0.5s; }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   z-index: 2;

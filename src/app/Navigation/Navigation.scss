@@ -4,7 +4,7 @@
   }
 
   &__button {
-    height: rem;
+    height: 7rem;
     width: 7rem;
     position: fixed;
     top: 1.5rem;
@@ -35,20 +35,30 @@
     list-style-type: none;
     color: white;
     font-size: 5rem;
+    height: 50rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   &__item {
-    padding: 1rem 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% / 6);
+  }
+
+  &__link {
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
 
     &:hover {
       background-color: gray;
       transition: 0.5s;
     }
-  }
-
-  &__link {
-    color: white;
-    text-decoration: none;
   }
 
   &__checkbox:checked ~ &__nav {

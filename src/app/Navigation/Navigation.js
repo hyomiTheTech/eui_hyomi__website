@@ -72,7 +72,7 @@ const Navigation = () => {
               htmlFor="navi-toggle"
               onClick={CheckboxHandler}
             >
-              CONTACT ME
+              CONTACT
             </a>
           </li>
         </ul>
