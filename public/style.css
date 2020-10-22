@@ -91,7 +91,8 @@
   justify-self: center;
   cursor: pointer;
   animation: logoStart 4s;
-  animation-direction: normal; }
+  animation-direction: normal;
+  text-decoration: none; }
   .scroll-button:hover ~ .down-arrow {
     animation: blinkingPointer 2s infinite;
     display: grid; }

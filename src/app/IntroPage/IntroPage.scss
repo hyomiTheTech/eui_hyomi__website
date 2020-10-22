@@ -60,12 +60,12 @@
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.5rem;
-  // border-bottom: 1px solid $color-border-white;
   display: grid;
   justify-self: center;
   cursor: pointer;
   animation: logoStart 4s;
   animation-direction: normal;
+  text-decoration: none;
 
   &:hover ~ .down-arrow {
     animation: blinkingPointer 2s infinite;
