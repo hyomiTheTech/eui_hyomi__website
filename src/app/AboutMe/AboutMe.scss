@@ -1,14 +1,14 @@
-.section-about-me {
+.about {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f3f3f3;
+  background-color: #eeeeee;
 }
 
 .profile {
-  filter: grayscale(100%);
+  filter: grayscale(50%);
   height: 40rem;
   width: 40rem;
   margin: 8rem;
@@ -16,7 +16,7 @@
 
 .about-me {
   font-size: 2.5rem;
-  opacity: 0.5;
+  // opacity: 0.6;
 
   width: 80rem;
 }

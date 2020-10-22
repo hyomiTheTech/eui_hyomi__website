@@ -1,22 +1,19 @@
-.wrapper {
+.landing-page {
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-columns: 17rem 1fr 0.6fr 0.3fr 0.6fr 1fr 15rem 2rem;
-  grid-template-rows: 2rem 5rem 1fr 1.5fr 1fr 3rem 4rem;
+  grid-template-columns: 1.5fr 0.6fr 0.3fr 0.6fr 1.5fr;
+  grid-template-rows: 7rem 1fr 1.5fr 1fr 3rem 4rem;
   grid-template-areas:
-    ". . . . . . . . "
-    ". . . . . . logo ."
-    ". . . . . . . . "
-    ". . header header header . . ."
-    ". . . . . . . ."
-    ". . . scroll . . . . "
-    ". . . down-arrow . . . .";
-
-  user-select: none;
+    " . . . . .  "
+    " . . . . .   "
+    " . header header header .  "
+    " . . . . .  "
+    " . . scroll . .  "
+    " . . down-arrow . .  ";
 
   animation-name: moveInUp;
   animation-duration: 1s;
@@ -61,12 +58,12 @@
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.5rem;
-  // border-bottom: 1px solid $color-border-white;
   display: grid;
   justify-self: center;
   cursor: pointer;
   animation: logoStart 4s;
   animation-direction: normal;
+  text-decoration: none;
 
   &:hover ~ .down-arrow {
     animation: blinkingPointer 2s infinite;

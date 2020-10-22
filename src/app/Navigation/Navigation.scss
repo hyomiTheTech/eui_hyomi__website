@@ -1,0 +1,126 @@
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    border-radius: 50%;
+    z-index: 3;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: $transition-navigation;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    font-size: 5rem;
+    height: 50rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% / 6);
+  }
+
+  &__link {
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      background-color: gray;
+      transition: 0.5s;
+    }
+  }
+
+  &__checkbox:checked ~ &__nav {
+    z-index: 2;
+    opacity: 1;
+    transition: $transition-navigation;
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3.5rem;
+      height: 2px;
+      background-color: gray;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      top: 1rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1.3rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1.3rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+.blur {
+  filter: blur(3rem);
+  transition: $transition-navigation;
+  background-color: gray;
+}
