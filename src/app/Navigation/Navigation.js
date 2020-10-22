@@ -39,28 +39,49 @@ const Navigation = () => {
       </label>
 
       <nav className="navigation__nav">
-        <ul className="navigation__list">
-          <li className="navigation__item">
-            <a href="#home" className="navigation__link">
-              HOME
-            </a>
-          </li>
-          <li className="navigation__item">
-            <a href="#about" className="navigation__link">
-              ABOUT
-            </a>
-          </li>
-          <li className="navigation__item">
-            <a href="#portfolio" className="navigation__link">
-              PORTFOLIO
-            </a>
-          </li>
-          <li className="navigation__item">
-            <a href="#contact" className="navigation__link">
-              CONTACT ME
-            </a>
-          </li>
-        </ul>
+        <label htmlFor="navi-toggle">
+          <ul className="navigation__list">
+            <li className="navigation__item">
+              <a
+                href="#home"
+                className="navigation__link"
+                onClick={CheckboxHandler}
+              >
+                HOME
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a
+                href="#about"
+                className="navigation__link"
+                htmlFor="navi-toggle"
+                onClick={CheckboxHandler}
+              >
+                ABOUT
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a
+                href="#portfolio"
+                className="navigation__link"
+                htmlFor="navi-toggle"
+                onClick={CheckboxHandler}
+              >
+                PORTFOLIO
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a
+                href="#contact"
+                className="navigation__link"
+                htmlFor="navi-toggle"
+                onClick={CheckboxHandler}
+              >
+                CONTACT ME
+              </a>
+            </li>
+          </ul>
+        </label>
       </nav>
     </div>
   );

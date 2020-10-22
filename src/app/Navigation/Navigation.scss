@@ -1,6 +1,6 @@
 .navigation {
   &__checkbox {
-    display: none;
+    // display: none;
   }
 
   &__button {
@@ -49,6 +49,7 @@
   &__link {
     color: white;
     text-decoration: none;
+  }
 
   &__checkbox:checked ~ &__nav {
     z-index: 2;
@@ -112,4 +113,8 @@
   filter: blur(3rem);
   transition: $transition-navigation;
   background-color: gray;
+}
+
+.testing {
+  z-index: 2010;
 }
