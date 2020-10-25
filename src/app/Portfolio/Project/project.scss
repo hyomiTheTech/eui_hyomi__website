@@ -1,0 +1,28 @@
+.project {
+  position: relative;
+
+  &__caption {
+    width: 35rem;
+    height: 30rem;
+    background-color: transparent;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: -1;
+    transition: 0.5s;
+  }
+
+  &__cover-image {
+    //   filter: grayscale(100%);
+    width: 35rem;
+    height: 30rem;
+    padding: 1rem;
+    filter: grayscale(100%) brightness(30%);
+    transition: 0.5s;
+  }
+  &:hover &__cover-image {
+  }
+  &:hover &__caption {
+    z-index: 0;
+  }
+}
