@@ -270,6 +270,8 @@
     padding: 1rem;
     filter: grayscale(100%) brightness(30%);
     transition: 0.5s; }
+  .project:hover .project__cover-image {
+    filter: grayscale(0%) brightness(100%); }
   .project:hover .project__caption {
     z-index: 0; }
 
