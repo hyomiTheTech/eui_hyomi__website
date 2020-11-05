@@ -6,7 +6,7 @@ const Project = ({ imgSrc, projectName }) => {
       <img className="project__cover-image" alt="project cover" src={imgSrc} />
       <figcaption className="project__caption">
         {projectName}
-        <div>sdfsd</div>
+        <div>Javascript, Jquery</div>
       </figcaption>
     </figure>
   );

@@ -21,9 +21,11 @@
     transition: 0.5s;
   }
   &:hover &__cover-image {
-    filter: grayscale(0%) brightness(100%);
+    filter: grayscale(30%) brightness(100%);
   }
   &:hover &__caption {
     z-index: 0;
+    display: flex;
+    justify-content: center;
   }
 }
