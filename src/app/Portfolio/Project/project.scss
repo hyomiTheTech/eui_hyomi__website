@@ -2,30 +2,61 @@
   position: relative;
 
   &__caption {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-template-areas:
+      ". . ."
+      ". description ."
+      ". . ."
+      ". button .";
     width: 35rem;
     height: 30rem;
     background-color: transparent;
     position: absolute;
     top: 1rem;
     left: 1rem;
-    z-index: -1;
+    z-index: 11;
     transition: 0.5s;
+    color: white;
   }
 
   &__cover-image {
-    //   filter: grayscale(100%);
     width: 35rem;
     height: 30rem;
     padding: 1rem;
-    filter: grayscale(100%) brightness(30%);
+
     transition: 0.5s;
   }
+
+  &__description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    letter-spacing: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid $color-white;
+    font-weight: 300;
+    padding: 0.5rem;
+  }
+
+  &__tech {
+    font-weight: 200;
+  }
+
+  &__button {
+    grid-area: button;
+  }
+
   &:hover &__cover-image {
-    filter: grayscale(30%) brightness(100%);
+    filter: grayscale(100%) brightness(30%);
   }
   &:hover &__caption {
     z-index: 0;
-    display: flex;
-    justify-content: center;
   }
 }

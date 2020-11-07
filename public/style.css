@@ -256,26 +256,44 @@
 .project {
   position: relative; }
   .project__caption {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-template-areas: ". . ." ". description ." ". . ." ". button .";
     width: 35rem;
     height: 30rem;
     background-color: transparent;
     position: absolute;
     top: 1rem;
     left: 1rem;
-    z-index: -1;
-    transition: 0.5s; }
+    z-index: 11;
+    transition: 0.5s;
+    color: white; }
   .project__cover-image {
     width: 35rem;
     height: 30rem;
     padding: 1rem;
-    filter: grayscale(100%) brightness(30%);
     transition: 0.5s; }
-  .project:hover .project__cover-image {
-    filter: grayscale(30%) brightness(100%); }
-  .project:hover .project__caption {
-    z-index: 0;
+  .project__description {
+    grid-area: description;
     display: flex;
-    justify-content: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .project__name {
+    letter-spacing: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid #fff;
+    font-weight: 300;
+    padding: 0.5rem; }
+  .project__tech {
+    font-weight: 200; }
+  .project__button {
+    grid-area: button; }
+  .project:hover .project__cover-image {
+    filter: grayscale(100%) brightness(30%); }
+  .project:hover .project__caption {
+    z-index: 0; }
 
 * {
   margin: 0;
