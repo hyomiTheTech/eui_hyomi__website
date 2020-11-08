@@ -257,9 +257,9 @@
   position: relative; }
   .project__caption {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 1fr;
-    grid-template-areas: ". . ." ". description ." ". . ." ". button .";
+    grid-template-columns: 0.8fr 0.5fr 1fr 0.5fr 0.8fr;
+    grid-template-rows: 1fr 3fr 1fr 1.5fr;
+    grid-template-areas: ". . . . ." ". description description description ." ". . button . ." ". . . . .";
     width: 35rem;
     height: 30rem;
     background-color: transparent;
@@ -273,23 +273,34 @@
     width: 35rem;
     height: 30rem;
     padding: 1rem;
-    transition: 0.5s; }
+    transition: 0.5s;
+    filter: grayscale(100%) brightness(30%); }
   .project__description {
     grid-area: description;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center; }
   .project__name {
     letter-spacing: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid #fff;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0.5rem; }
   .project__tech {
-    font-weight: 200; }
+    margin-top: 0.5rem;
+    font-weight: 300; }
   .project__button {
-    grid-area: button; }
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent; }
+    .project__button:hover {
+      border: 1px solid white; }
   .project:hover .project__cover-image {
     filter: grayscale(100%) brightness(30%); }
   .project:hover .project__caption {

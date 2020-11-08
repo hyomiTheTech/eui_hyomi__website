@@ -9,7 +9,7 @@ const Project = ({ imgSrc, projectName }) => {
           <h3 className="project__name">&nbsp;{projectName}</h3>
           <h5 className="project__tech">HTML, jQuery, CSS</h5>
         </div>
-        <button className="project__button">EXPLORE</button>
+        <a className="project__button">EXPLORE</a>
       </figcaption>
     </figure>
   );
