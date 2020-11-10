@@ -266,15 +266,14 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    z-index: 11;
-    transition: 0.5s;
-    color: white; }
+    transition: all 0.5s ease-in-out;
+    color: white;
+    opacity: 0; }
   .project__cover-image {
     width: 35rem;
     height: 30rem;
     padding: 1rem;
-    transition: 0.5s;
-    filter: grayscale(100%) brightness(30%); }
+    transition: 0.5s; }
   .project__description {
     grid-area: description;
     display: flex;
@@ -304,7 +303,7 @@
   .project:hover .project__cover-image {
     filter: grayscale(100%) brightness(30%); }
   .project:hover .project__caption {
-    z-index: 0; }
+    opacity: 1; }
 
 * {
   margin: 0;

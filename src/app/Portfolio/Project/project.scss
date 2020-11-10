@@ -16,9 +16,10 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    z-index: 11;
-    transition: 0.5s;
+
+    transition: all 0.5s ease-in-out;
     color: white;
+    opacity: 0;
   }
 
   &__cover-image {
@@ -26,7 +27,6 @@
     height: 30rem;
     padding: 1rem;
     transition: 0.5s;
-    filter: grayscale(100%) brightness(30%);
   }
 
   &__description {
@@ -69,6 +69,6 @@
     filter: grayscale(100%) brightness(30%);
   }
   &:hover &__caption {
-    z-index: 0;
+    opacity: 1;
   }
 }
