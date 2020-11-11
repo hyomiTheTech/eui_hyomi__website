@@ -305,6 +305,39 @@
   .project:hover .project__caption {
     opacity: 1; }
 
+.project-modal--open {
+  position: fixed;
+  background: white;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.project-modal--close {
+  display: none; }
+
+.close-button {
+  height: 7rem;
+  width: 7rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer; }
+  .close-button__icon {
+    margin-top: 3.5rem;
+    width: 3.5rem;
+    height: 2px;
+    background-color: gray;
+    display: inline-block; }
+    .close-button__icon::before {
+      top: 0;
+      transform: rotate(135deg); }
+    .close-button__icon::after {
+      top: 0;
+      transform: rotate(-135deg); }
+
 * {
   margin: 0;
   padding: 0;

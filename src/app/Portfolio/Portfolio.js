@@ -1,28 +1,47 @@
-import React from "react";
-
+import React, { useState } from "react";
 import Project from "./Project";
+import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
     projectName: "TWIDDLER",
     imgSrc: "./assets/images/project-image/twiddler.png",
+    techStack: ["jquery", "HTML", "CSS"],
+    modalProperties: {
+      name: "Twiddler",
+      images: ["./assets/images/project-image/twiddler.png"],
+      description: "David is the best Software Engineer in the world!!!",
+    },
   },
 ];
 
 const Portfolio = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // modal properties
+  const [projectModalProperties, setProjectModalProperties] = useState({});
+
   return (
     <section className="portfolio" id="portfolio">
       <h2 className="heading__secondary">PORTFORLIO</h2>
       Welcome to my portforlio
       <div className="project-container">
-        {projects.map(({ projectName, imgSrc }) => (
+        {projects.map(({ projectName, imgSrc, techStack, modalProperties }) => (
           <Project
             projectName={projectName}
             imgSrc={imgSrc}
+            techStack={techStack}
+            modalProperties={modalProperties}
             key={projectName}
+            setIsModalOpen={setIsModalOpen}
+            setProjectModalProperties={setProjectModalProperties}
           />
         ))}
       </div>
+      <ProjectModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        projectModalProperties={projectModalProperties}
+      />
     </section>
   );
 };
