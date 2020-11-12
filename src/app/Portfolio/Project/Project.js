@@ -1,18 +1,28 @@
 import React from "react";
+import { connect } from "react-redux";
+import { getProjectProperties } from "../../../redux/action";
 
-const Project = ({
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getProjectProperties: (properties) =>
+      dispatch(getProjectProperties(properties)),
+  };
+};
+
+const ConnectedProject = ({
   imgSrc,
   projectName,
   techStack,
   modalProperties,
-  setProjectModalProperties,
+  getProjectProperties,
+  projectProperties,
 }) => {
   const exploreClickHandler = () => {
     let modal = document.getElementsByClassName("project-modal");
     modal[0].style.top = "50%";
-    modal[0].style.zIndex = 4;
-    modal[0].style.position = "absolute";
-    setProjectModalProperties(modalProperties);
+    modal[0].style.zIndex = 2;
+
+    getProjectProperties(modalProperties);
 
     const wrapper = document.getElementById("page-wrapper");
     wrapper.classList.add("blur");
@@ -32,5 +42,7 @@ const Project = ({
     </figure>
   );
 };
+
+const Project = connect(null, mapDispatchToProps)(ConnectedProject);
 
 export default Project;

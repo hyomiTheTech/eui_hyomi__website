@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Project from "./Project";
-import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
@@ -16,9 +15,6 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  // modal properties
-  const [projectModalProperties, setProjectModalProperties] = useState({});
-
   return (
     <section className="portfolio" id="portfolio">
       <h2 className="heading__secondary">PORTFORLIO</h2>
@@ -31,11 +27,9 @@ const Portfolio = () => {
             techStack={techStack}
             modalProperties={modalProperties}
             key={projectName}
-            setProjectModalProperties={setProjectModalProperties}
           />
         ))}
       </div>
-      <ProjectModal projectModalProperties={projectModalProperties} />
     </section>
   );
 };

@@ -1,7 +1,12 @@
 import React from "react";
+import { connect } from "react-redux";
 
-const ProjectModal = ({ projectModalProperties }) => {
-  const { name, images, description } = projectModalProperties;
+const mapStateToProps = (state) => {
+  return { projectProperties: state.projectProperties };
+};
+
+const ConnectedProjectModal = ({ projectProperties }) => {
+  const { name, images, description } = projectProperties;
 
   const closeButtonHandler = () => {
     let modal = document.getElementsByClassName("project-modal");
@@ -25,5 +30,7 @@ const ProjectModal = ({ projectModalProperties }) => {
     </section>
   );
 };
+
+const ProjectModal = connect(mapStateToProps, null)(ConnectedProjectModal);
 
 export default ProjectModal;
