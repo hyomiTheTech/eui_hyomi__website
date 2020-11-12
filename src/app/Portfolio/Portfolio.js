@@ -8,7 +8,7 @@ const projects = [
     imgSrc: "./assets/images/project-image/twiddler.png",
     techStack: ["jquery", "HTML", "CSS"],
     modalProperties: {
-      name: "Twiddler",
+      name: "TWIDDLER",
       images: ["./assets/images/project-image/twiddler.png"],
       description: "David is the best Software Engineer in the world!!!",
     },
@@ -16,7 +16,6 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   // modal properties
   const [projectModalProperties, setProjectModalProperties] = useState({});
 
@@ -32,16 +31,11 @@ const Portfolio = () => {
             techStack={techStack}
             modalProperties={modalProperties}
             key={projectName}
-            setIsModalOpen={setIsModalOpen}
             setProjectModalProperties={setProjectModalProperties}
           />
         ))}
       </div>
-      <ProjectModal
-        isModalOpen={isModalOpen}
-        setIsModalOpen={setIsModalOpen}
-        projectModalProperties={projectModalProperties}
-      />
+      <ProjectModal projectModalProperties={projectModalProperties} />
     </section>
   );
 };

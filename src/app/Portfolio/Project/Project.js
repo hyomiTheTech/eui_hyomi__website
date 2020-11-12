@@ -6,11 +6,16 @@ const Project = ({
   techStack,
   modalProperties,
   setProjectModalProperties,
-  setIsModalOpen,
 }) => {
   const exploreClickHandler = () => {
-    setIsModalOpen(true);
+    let modal = document.getElementsByClassName("project-modal");
+    modal[0].style.top = "50%";
+    modal[0].style.zIndex = 4;
+    modal[0].style.position = "absolute";
     setProjectModalProperties(modalProperties);
+
+    const wrapper = document.getElementById("page-wrapper");
+    wrapper.classList.add("blur");
   };
   return (
     <figure className="project">

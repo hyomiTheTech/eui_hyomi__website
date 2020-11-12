@@ -305,38 +305,33 @@
   .project:hover .project__caption {
     opacity: 1; }
 
-.project-modal--open {
+.project-modal {
   position: fixed;
   background: white;
   width: 50%;
   height: 50%;
-  top: 50%;
+  top: -30%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-
-.project-modal--close {
-  display: none; }
+  transform: translate(-50%, -50%);
+  transition: all 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .close-button {
-  height: 7rem;
-  width: 7rem;
-  top: 1.5rem;
+  position: absolute;
   right: 1.5rem;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer; }
+  top: 1.5rem; }
   .close-button__icon {
-    margin-top: 3.5rem;
-    width: 3.5rem;
-    height: 2px;
-    background-color: gray;
-    display: inline-block; }
-    .close-button__icon::before {
-      top: 0;
-      transform: rotate(135deg); }
-    .close-button__icon::after {
-      top: 0;
-      transform: rotate(-135deg); }
+    cursor: pointer; }
+
+.project-modal__header {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  margin: 2rem; }
 
 * {
   margin: 0;
