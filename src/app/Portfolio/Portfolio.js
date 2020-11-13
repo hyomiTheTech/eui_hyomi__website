@@ -4,11 +4,30 @@ import Project from "./Project";
 const projects = [
   {
     projectName: "TWIDDLER",
-    imgSrc: "./assets/images/project-image/twiddler.png",
-    techStack: ["jquery", "HTML", "CSS"],
+    imgSrc: "./assets/images/project-image/twiddler/twiddler.png",
+    techStack: "jQuery, HTML, CSS",
     modalProperties: {
       name: "TWIDDLER",
-      images: ["./assets/images/project-image/twiddler.png"],
+      images: [
+        "./assets/images/project-image/twiddler/image 6.png",
+        "./assets/images/project-image/twiddler/image 1.png",
+        "./assets/images/project-image/twiddler/image 2.png",
+        "./assets/images/project-image/twiddler/image 3.png",
+        "./assets/images/project-image/twiddler/image 4.png",
+        "./assets/images/project-image/twiddler/image 5.png",
+        "./assets/images/project-image/twiddler/image 6.png",
+        "./assets/images/project-image/twiddler/twiddler.png",
+      ],
+      description: "David is the best Software Engineer in the world!!!",
+    },
+  },
+  {
+    projectName: "IKEA PAGE",
+    imgSrc: "./assets/images/project-image/twiddler.png",
+    techStack: "React, HTML, CSS",
+    modalProperties: {
+      name: "IKEA PAGE",
+      images: ["fsdf"],
       description: "David is the best Software Engineer in the world!!!",
     },
   },

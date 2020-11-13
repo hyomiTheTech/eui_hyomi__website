@@ -18,14 +18,17 @@ const ConnectedProject = ({
   projectProperties,
 }) => {
   const exploreClickHandler = () => {
-    let modal = document.getElementsByClassName("project-modal");
-    modal[0].style.top = "50%";
-    modal[0].style.zIndex = 2;
+    let modal = document.getElementsByClassName("project-modal")[0];
+    modal.style.top = "50%";
+    modal.style.zIndex = 2;
 
     getProjectProperties(modalProperties);
 
     const wrapper = document.getElementById("page-wrapper");
     wrapper.classList.add("blur");
+
+    document.getElementsByClassName("navigation__icon")[0].style.display =
+      "none";
   };
   return (
     <figure className="project">

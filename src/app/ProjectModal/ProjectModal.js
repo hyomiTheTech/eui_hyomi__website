@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import Carousel from "./Carousel";
 
 const mapStateToProps = (state) => {
   return { projectProperties: state.projectProperties };
@@ -10,10 +11,13 @@ const ConnectedProjectModal = ({ projectProperties }) => {
 
   const closeButtonHandler = () => {
     let modal = document.getElementsByClassName("project-modal");
-    modal[0].style.top = "-30%";
+    modal[0].style.top = "-35%";
 
     const wrapper = document.getElementById("page-wrapper");
     wrapper.classList.remove("blur");
+
+    document.getElementsByClassName("navigation__icon")[0].style.display =
+      "block";
   };
 
   return (
@@ -26,6 +30,7 @@ const ConnectedProjectModal = ({ projectProperties }) => {
         />
       </label>
       <header className="project-modal__header">{name}</header>
+      <Carousel images={images} />
       <p>{description}</p>
     </section>
   );

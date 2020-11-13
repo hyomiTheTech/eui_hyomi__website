@@ -1,7 +1,7 @@
 import { GET_PROJECT_PROPERTIES } from "../constants/action-type";
 
 const initialState = {
-  projectProperties: {},
+  projectProperties: { images: [] },
 };
 
 function rootReducer(state = initialState, action) {
