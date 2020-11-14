@@ -7,7 +7,7 @@ const mapStateToProps = (state) => {
 };
 
 const ConnectedProjectModal = ({ projectProperties }) => {
-  const { name, images, description } = projectProperties;
+  const { name, images, description, site, githubSrc } = projectProperties;
 
   const closeButtonHandler = () => {
     let modal = document.getElementsByClassName("project-modal");
@@ -31,7 +31,15 @@ const ConnectedProjectModal = ({ projectProperties }) => {
       </label>
       <header className="project-modal__header">{name}</header>
       <Carousel images={images} />
-      <p>{description}</p>
+      <p className="project-modal__description">{description}</p>
+      <div className="anchor-tag-container">
+        <a className="anchor-tag" target="_blank" href={site}>
+          Visit
+        </a>
+        <a className="anchor-tag" target="_blank" href={githubSrc}>
+          Github
+        </a>
+      </div>
     </section>
   );
 };

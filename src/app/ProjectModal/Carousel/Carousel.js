@@ -2,24 +2,28 @@ import React, { useState, useEffect } from "react";
 
 const Carousel = ({ images }) => {
   const [counter, setCounter] = useState(1);
-  const [size, setSize] = useState(0);
 
-  const image = document.querySelectorAll(".carousel__image"); // carouselImages
-  const carousel = document.querySelector(".carousel__images"); // carouselSlide
+  const size = 300;
+
+  const image = document.querySelectorAll(".carousel__image");
+  const carousel = document.querySelector(".carousel__images");
 
   const previousButtonHandler = () => {
-    setCounter(counter - 1);
-    carousel.style.transition = "all 0.7s ease-in-out";
+    if (counter > 0) {
+      setCounter(counter - 1);
+      carousel.style.transition = "all 0.7s ease-in-out";
+    }
   };
 
   const nextButtonHandler = () => {
-    setCounter(counter + 1);
-    carousel.style.transition = "all 0.7s ease-in-out";
+    if (counter < 7) {
+      setCounter(counter + 1);
+      carousel.style.transition = "all 0.7s ease-in-out";
+    }
   };
 
   const transitionEndHandler = () => {
     if (carousel) {
-      console.log("image", image[counter]);
       if (image[counter].id === "lastClone") {
         carousel.style.transition = "none";
         setCounter(image.length - 2);
@@ -32,9 +36,6 @@ const Carousel = ({ images }) => {
   };
 
   useEffect(() => {
-    if (image.length) {
-      setSize(image[0].clientWidth);
-    }
     if (carousel) {
       carousel.style.transform = `translateX(${-size * counter}px)`;
     }
@@ -46,7 +47,7 @@ const Carousel = ({ images }) => {
         className="carousel__button--previous"
         onClick={previousButtonHandler}
       >
-        Prev
+        <img src="./assets/images/logos/left-arrow.svg" />
       </button>
       <div className="carousel__images" onTransitionEnd={transitionEndHandler}>
         {images.map((image, i) => {
@@ -71,7 +72,7 @@ const Carousel = ({ images }) => {
         })}
       </div>
       <button className="carousel__button--next" onClick={nextButtonHandler}>
-        Next
+        <img src="./assets/images/logos/right-arrow.svg" />
       </button>
     </div>
   );

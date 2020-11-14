@@ -19,6 +19,8 @@ const projects = [
         "./assets/images/project-image/twiddler/twiddler.png",
       ],
       description: "David is the best Software Engineer in the world!!!",
+      site: "https://hyomi-twiddler.herokuapp.com/",
+      githubSrc: "https://github.com/hyomiTheTech/twiddler",
     },
   },
   {
