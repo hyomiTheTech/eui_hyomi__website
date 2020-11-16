@@ -103,7 +103,6 @@
   height: 3rem; }
 
 .logo-container {
-  animation: logoStart 4s;
   display: flex;
   justify-content: space-between; }
   .logo-container:hover .logo {
@@ -111,7 +110,8 @@
     transition: 0.5s; }
 
 .logo {
-  transition: 0.5s; }
+  transition: 0.5s;
+  margin: 0 0.8rem; }
   .logo:hover {
     opacity: 1 !important; }
 
@@ -346,7 +346,6 @@
 .anchor-tag {
   width: 12rem;
   height: 4rem;
-  display: inline-block;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -386,6 +385,37 @@
     cursor: pointer; }
     .carousel__button--next:focus {
       outline: 0; }
+
+.contact {
+  height: 60vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.up-arrow:hover ~ .testing {
+  display: inline-block; }
+
+.testing {
+  display: none;
+  font-size: 6rem;
+  color: white;
+  font-weight: 200;
+  font-weight: 200;
+  transform: rotate(90deg) translateX(-104px); }
+
+.comment {
+  color: #fff;
+  font-size: 5rem; }
+
+.copyright {
+  color: #969696; }
+  .copyright__name {
+    text-decoration: none;
+    color: #969696; }
 
 * {
   margin: 0;

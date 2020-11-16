@@ -4,6 +4,7 @@ import IntroPage from "./IntroPage";
 import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
 import ProjectModal from "./ProjectModal";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <main>
           <AboutMe />
           <Portfolio />
+          <Contact />
         </main>
       </div>
     </>

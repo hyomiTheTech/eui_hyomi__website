@@ -33,10 +33,20 @@ const ConnectedProjectModal = ({ projectProperties }) => {
       <Carousel images={images} />
       <p className="project-modal__description">{description}</p>
       <div className="anchor-tag-container">
-        <a className="anchor-tag" target="_blank" href={site}>
+        <a
+          className="anchor-tag"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={site}
+        >
           Visit
         </a>
-        <a className="anchor-tag" target="_blank" href={githubSrc}>
+        <a
+          className="anchor-tag"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={githubSrc}
+        >
           Github
         </a>
       </div>
