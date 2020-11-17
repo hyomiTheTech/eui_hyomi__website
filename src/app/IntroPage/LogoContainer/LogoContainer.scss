@@ -1,9 +1,6 @@
 .logo-container {
-  animation: logoStart 4s;
-
-  // grid-area: logo;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   &:hover .logo {
     opacity: 0.3;
@@ -13,6 +10,7 @@
 
 .logo {
   transition: 0.5s;
+  margin: 0 0.8rem;
   &:hover {
     opacity: 1 !important;
   }

@@ -1,0 +1,62 @@
+.contact-modal {
+  position: fixed;
+  background: #f3f3f3;
+  width: 40%;
+  height: 70%;
+  bottom: -150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1.3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input {
+    background-color: white;
+    border: none;
+    height: 3rem;
+    width: 30rem;
+    margin: 0.5rem;
+  }
+
+  &__message {
+    background-color: white;
+    border: none;
+    height: 20rem;
+    width: 30rem;
+    margin: 0.5rem;
+    resize: none;
+  }
+
+  &__submit-button {
+    width: 12rem;
+    height: 4rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+}
