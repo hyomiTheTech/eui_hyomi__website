@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const closeButtonHandler = () => {
@@ -11,6 +12,28 @@ const ContactForm = () => {
     document.querySelector(".navigation__icon").style.display = "block";
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_06mpapf",
+        "template_g78qmam",
+        e.target,
+        "user_PIkdZ66k8v1fagtt0eJbP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <div className="contact-modal">
       <label className="close-button" onClick={closeButtonHandler}>
@@ -21,7 +44,7 @@ const ContactForm = () => {
         />
       </label>
       <h1 className="contact-modal__heading">CONTACT</h1>
-      <form className="contact-form" action="contactform.php" method="post">
+      <form className="contact-form" onSubmit={sendEmail}>
         <input
           className="contact-form__input"
           type="text"
@@ -31,7 +54,7 @@ const ContactForm = () => {
         <input
           className="contact-form__input"
           type="text"
-          name="mail"
+          name="email"
           placeholder="Your e-mail"
         />
         <input
