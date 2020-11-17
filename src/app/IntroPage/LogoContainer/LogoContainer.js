@@ -20,11 +20,11 @@ const LogoContainer = () => {
         src="./assets/images/logos/email.svg"
         alt="email logo"
       />
-      {/* <Logo
-        href="mailto:hyomithetech@gmail.com"
+      <Logo
+        href="./assets/file/Resume.pdf"
         src="./assets/images/logos/resume-and-cv.svg"
         alt="email logo"
-      /> */}
+      />
     </nav>
   );
 };
