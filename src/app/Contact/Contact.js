@@ -2,14 +2,30 @@ import React from "react";
 import LogoContainer from "../IntroPage/LogoContainer";
 
 const Contact = () => {
+  const contactButtonHandler = () => {
+    const contactForm = document.querySelector(".contact-modal");
+
+    contactForm.style.bottom = "0%";
+    contactForm.style.zIndex = 2;
+
+    const wrapper = document.getElementById("page-wrapper");
+    wrapper.classList.add("blur");
+
+    document.getElementsByClassName("navigation__icon")[0].style.display =
+      "none";
+  };
+
   return (
-    <div className="contact" id="contact">
+    <section className="contact" id="contact">
       <img
         className="up-arrow"
         src="./assets/images/logos/up-chevron.svg"
         alt="up arrow"
       />
-      <h1 className="comment">. . . made with love</h1>
+      <h1 className="comment">Every application has been made with love.</h1>
+      <a className="contact__button" onClick={contactButtonHandler}>
+        CONTACT ME
+      </a>
       <LogoContainer />
       <p className="copyright">
         Copyright © 2020{" "}
@@ -17,7 +33,7 @@ const Contact = () => {
           David Kim
         </a>
       </p>
-    </div>
+    </section>
   );
 };
 

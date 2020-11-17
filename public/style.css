@@ -393,29 +393,88 @@
   background-position: top;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center; }
+  .contact__button {
+    display: flex;
+    width: 15rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    margin: 2rem 0; }
+    .contact__button:hover {
+      border: 1px solid white; }
 
-.up-arrow:hover ~ .testing {
-  display: inline-block; }
-
-.testing {
-  display: none;
-  font-size: 6rem;
-  color: white;
-  font-weight: 200;
-  font-weight: 200;
-  transform: rotate(90deg) translateX(-104px); }
+.up-arrow {
+  margin: 2rem 0; }
 
 .comment {
   color: #fff;
-  font-size: 5rem; }
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin: 4rem 0; }
 
 .copyright {
-  color: #969696; }
+  color: #969696;
+  margin: 3rem 0 1rem 0; }
   .copyright__name {
     text-decoration: none;
     color: #969696; }
+
+.contact-modal {
+  position: fixed;
+  background: #cecdcd33;
+  width: 30%;
+  height: 50%;
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  .contact-modal__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contact-form__input {
+    background-color: white;
+    border: none;
+    height: 3rem;
+    width: 30rem;
+    margin: 0.5rem; }
+  .contact-form__message {
+    background-color: white;
+    border: none;
+    height: 20rem;
+    width: 30rem;
+    margin: 0.5rem; }
+  .contact-form__submit-button {
+    width: 12rem;
+    height: 4rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 1rem;
+    cursor: pointer; }
 
 * {
   margin: 0;
