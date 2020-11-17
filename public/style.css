@@ -21,7 +21,7 @@
     opacity: 1;
     transform: translateY(0); } }
 
-@keyframes blinkingPointer {
+@keyframes blinkingPointerStart {
   from {
     transform: translateY(0);
     opacity: 0.25; }
@@ -31,6 +31,17 @@
   to {
     transform: translateY(0);
     opacity: 0.25; } }
+
+@keyframes blinkingPointerGoBack {
+  from {
+    transform: translateY(-1rem);
+    opacity: 1; }
+  50% {
+    transform: translateY(0);
+    opacity: 0.5; }
+  to {
+    transform: translateY(-1rem);
+    opacity: 1; } }
 
 @keyframes logoStart {
   from {
@@ -93,18 +104,17 @@
   animation-direction: normal;
   text-decoration: none; }
   .scroll-button:hover ~ .down-arrow {
-    animation: blinkingPointer 2s infinite;
+    animation: blinkingPointerStart 2s infinite;
     display: grid; }
 
 .down-arrow {
   display: none;
   justify-self: center;
-  grid-area: down-arrow;
-  height: 3rem; }
+  grid-area: down-arrow; }
 
 .logo-container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
   .logo-container:hover .logo {
     opacity: 0.3;
     transition: 0.5s; }
@@ -391,9 +401,8 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  display: grid;
+  grid-template-rows: 2fr 7fr 6fr 2fr 1fr; }
   .contact__button {
     display: flex;
     width: 15rem;
@@ -405,32 +414,38 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid white;
-    margin: 2rem 0; }
+    justify-self: center; }
     .contact__button:hover {
       border: 1px solid white; }
 
 .up-arrow {
-  margin: 2rem 0; }
+  justify-self: center;
+  align-self: center; }
+  .up-arrow:hover > .up-arrow__icon {
+    animation: blinkingPointerGoBack 2s infinite; }
 
 .comment {
   color: #fff;
   font-size: 4.5rem;
   font-weight: 600;
-  margin: 4rem 0; }
+  justify-self: center;
+  align-self: center; }
 
 .copyright {
   color: #969696;
-  margin: 3rem 0 1rem 0; }
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 0.5rem; }
   .copyright__name {
     text-decoration: none;
     color: #969696; }
 
 .contact-modal {
   position: fixed;
-  background: #cecdcd33;
-  width: 30%;
-  height: 50%;
-  bottom: -100%;
+  background: #f3f3f3;
+  width: 40%;
+  height: 70%;
+  bottom: -150%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 1s ease-in-out;
@@ -439,7 +454,7 @@
   align-items: center;
   justify-content: flex-start; }
   .contact-modal__heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 1.3rem;
     padding-bottom: 0.5rem;
@@ -462,7 +477,8 @@
     border: none;
     height: 20rem;
     width: 30rem;
-    margin: 0.5rem; }
+    margin: 0.5rem;
+    resize: none; }
   .contact-form__submit-button {
     width: 12rem;
     height: 4rem;

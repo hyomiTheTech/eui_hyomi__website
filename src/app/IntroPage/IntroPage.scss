@@ -66,7 +66,7 @@
   text-decoration: none;
 
   &:hover ~ .down-arrow {
-    animation: blinkingPointer 2s infinite;
+    animation: blinkingPointerStart 2s infinite;
     display: grid;
   }
 }
@@ -75,5 +75,4 @@
   display: none;
   justify-self: center;
   grid-area: down-arrow;
-  height: 3rem;
 }

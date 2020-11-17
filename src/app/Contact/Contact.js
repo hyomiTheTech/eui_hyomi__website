@@ -5,7 +5,7 @@ const Contact = () => {
   const contactButtonHandler = () => {
     const contactForm = document.querySelector(".contact-modal");
 
-    contactForm.style.bottom = "0%";
+    contactForm.style.bottom = "-20%";
     contactForm.style.zIndex = 2;
 
     const wrapper = document.getElementById("page-wrapper");
@@ -17,11 +17,13 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <img
-        className="up-arrow"
-        src="./assets/images/logos/up-chevron.svg"
-        alt="up arrow"
-      />
+      <a href="#" className="up-arrow">
+        <img
+          className="up-arrow__icon"
+          src="./assets/images/logos/up-chevron.svg"
+          alt="up arrow"
+        />
+      </a>
       <h1 className="comment">Every application has been made with love.</h1>
       <a className="contact__button" onClick={contactButtonHandler}>
         CONTACT ME

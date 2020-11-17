@@ -23,16 +23,16 @@ const projects = [
       githubSrc: "https://github.com/hyomiTheTech/twiddler",
     },
   },
-  {
-    projectName: "IKEA PAGE",
-    imgSrc: "./assets/images/project-image/twiddler.png",
-    techStack: "React, HTML, CSS",
-    modalProperties: {
-      name: "IKEA PAGE",
-      images: ["fsdf"],
-      description: "David is the best Software Engineer in the world!!!",
-    },
-  },
+  // {
+  //   projectName: "IKEA PAGE",
+  //   imgSrc: "./assets/images/project-image/twiddler.png",
+  //   techStack: "React, HTML, CSS",
+  //   modalProperties: {
+  //     name: "IKEA PAGE",
+  //     images: ["fsdf"],
+  //     description: "David is the best Software Engineer in the world!!!",
+  //   },
+  // },
 ];
 
 const Portfolio = () => {

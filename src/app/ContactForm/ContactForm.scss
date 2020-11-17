@@ -1,9 +1,9 @@
 .contact-modal {
   position: fixed;
-  background: #cecdcd33;
-  width: 30%;
-  height: 50%;
-  bottom: -100%;
+  background: #f3f3f3;
+  width: 40%;
+  height: 70%;
+  bottom: -150%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 1s ease-in-out;
@@ -14,7 +14,7 @@
   justify-content: flex-start;
 
   &__heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 1.3rem;
     padding-bottom: 0.5rem;
@@ -43,6 +43,7 @@
     height: 20rem;
     width: 30rem;
     margin: 0.5rem;
+    resize: none;
   }
 
   &__submit-button {
@@ -59,8 +60,3 @@
     cursor: pointer;
   }
 }
-
-// #313435
-// #343638
-// #333537
-// #f4f6f7
