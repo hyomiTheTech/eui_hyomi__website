@@ -5,7 +5,7 @@ const Contact = () => {
   const contactButtonHandler = () => {
     const contactForm = document.querySelector(".contact-modal");
 
-    contactForm.style.bottom = "-20%";
+    contactForm.style.bottom = "-10%";
     contactForm.style.zIndex = 2;
 
     const wrapper = document.getElementById("page-wrapper");

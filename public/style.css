@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes moveInDown {
   0% {
     opacity: 0;
@@ -51,6 +52,13 @@
   to {
     opacity: 1; } }
 
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
 .landing-page {
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
@@ -63,6 +71,18 @@
   animation-name: moveInUp;
   animation-duration: 1s;
   animation-timing-function: ease-in; }
+  @media (min-width: 1800px) {
+    .landing-page {
+      grid-template-rows: 4fr 5fr 3.2fr 0.4fr 0.4fr; } }
+  @media (max-width: 1200px) {
+    .landing-page {
+      grid-template-rows: 5fr 4fr 4.2fr 0.4fr 0.4fr; } }
+  @media (max-width: 768px) {
+    .landing-page {
+      grid-template-rows: 6fr 3fr 5.2fr 0.4fr 0.4fr; } }
+  @media (max-width: 480px) {
+    .landing-page {
+      grid-template-rows: 7fr 2.5fr 6.2fr 0.4fr 0.4fr; } }
 
 .heading__primary {
   color: #fff;
@@ -74,6 +94,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   animation-name: moveInDown;
   animation-duration: 2s;
   animation-timing-function: ease-in; }
@@ -109,19 +130,22 @@
 
 .down-arrow {
   display: none;
+  width: 2.5rem;
   justify-self: center;
   grid-area: down-arrow; }
 
 .logo-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  grid-area: logo; }
   .logo-container:hover .logo {
     opacity: 0.3;
     transition: 0.5s; }
 
 .logo {
   transition: 0.5s;
-  margin: 0 0.5rem; }
+  margin: 0 0.5rem;
+  width: 2.5rem; }
   .logo:hover {
     opacity: 1 !important; }
 
@@ -293,9 +317,11 @@
     letter-spacing: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid #fff;
+    font-size: 2rem;
     font-weight: 400;
     padding: 0.5rem; }
   .project__tech {
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     font-weight: 300; }
   .project__button {
@@ -307,7 +333,8 @@
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border: 1px solid transparent; }
+    border: 1px solid transparent;
+    font-size: 1.5rem; }
     .project__button:hover {
       border: 1px solid white; }
   .project:hover .project__cover-image {
@@ -318,8 +345,8 @@
 .project-modal {
   position: fixed;
   background: white;
-  width: 50%;
-  height: 60%;
+  width: 80rem;
+  height: 70rem;
   top: -35%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -328,6 +355,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; }
+  @media (max-width: 480px) {
+    .project-modal {
+      width: 100%;
+      height: 100%; } }
   .project-modal__header {
     font-size: 5rem;
     font-weight: 700;
@@ -344,7 +375,8 @@
   right: 1.5rem;
   top: 1.5rem; }
   .close-button__icon {
-    cursor: pointer; }
+    cursor: pointer;
+    width: 2.5rem; }
 
 .anchor-tag-container {
   display: flex;
@@ -375,9 +407,9 @@
     width: 300px; }
   .carousel__button--previous {
     position: absolute;
-    top: 41%;
+    top: 34%;
     z-index: 3;
-    left: 28%;
+    left: 20%;
     background-color: transparent;
     border: none;
     color: white;
@@ -386,9 +418,9 @@
       outline: 0; }
   .carousel__button--next {
     position: absolute;
-    top: 41%;
+    top: 34%;
     z-index: 3;
-    right: 28%;
+    right: 20%;
     background-color: transparent;
     border: none;
     color: white;
@@ -397,12 +429,14 @@
       outline: 0; }
 
 .contact {
-  height: 60vh;
+  height: 60rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-rows: 2fr 7fr 6fr 2fr 1fr; }
+  grid-template-rows: 2fr 7fr 6fr 1fr 1.5fr;
+  grid-template-columns: 5.5fr 1fr 5.5fr;
+  grid-template-areas: ". up-arrow ." "comment comment comment" "button button button" ". logo ." "copyright copyright copyright"; }
   .contact__button {
     display: flex;
     width: 15rem;
@@ -414,13 +448,19 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid white;
-    justify-self: center; }
+    justify-self: center;
+    font-size: 1.5rem;
+    grid-area: button; }
     .contact__button:hover {
       border: 1px solid white; }
 
 .up-arrow {
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  width: 2.5rem;
+  grid-area: up-arrow; }
+  .up-arrow__icon {
+    width: 2.5rem; }
   .up-arrow:hover > .up-arrow__icon {
     animation: blinkingPointerGoBack 2s infinite; }
 
@@ -429,13 +469,16 @@
   font-size: 4.5rem;
   font-weight: 600;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  grid-area: comment; }
 
 .copyright {
   color: #969696;
   justify-self: center;
   align-self: center;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  grid-area: copyright; }
   .copyright__name {
     text-decoration: none;
     color: #969696; }
@@ -443,8 +486,8 @@
 .contact-modal {
   position: fixed;
   background: #f3f3f3;
-  width: 40%;
-  height: 70%;
+  width: 50rem;
+  height: 60rem;
   bottom: -150%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -490,7 +533,8 @@
     background-color: transparent;
     text-decoration: none;
     margin-top: 1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 1.5rem; }
 
 * {
   margin: 0;
@@ -501,6 +545,18 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 62.5%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 30%; } }
+  @media (max-width: 480px) {
+    html {
+      font-size: 20%; } }
 
 body {
   font-family: "Lato", sans-serif;

@@ -1,11 +1,18 @@
 .contact {
-  height: 60vh;
+  height: 60rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-rows: 2fr 7fr 6fr 2fr 1fr;
+  grid-template-rows: 2fr 7fr 6fr 1fr 1.5fr;
+  grid-template-columns: 5.5fr 1fr 5.5fr;
+  grid-template-areas:
+    ". up-arrow ."
+    "comment comment comment"
+    "button button button"
+    ". logo ."
+    "copyright copyright copyright";
 
   &__button {
     display: flex;
@@ -19,6 +26,8 @@
     transition: all 0.3s ease-in-out;
     border: 1px solid white;
     justify-self: center;
+    font-size: 1.5rem;
+    grid-area: button;
 
     &:hover {
       border: 1px solid white;
@@ -29,6 +38,12 @@
 .up-arrow {
   justify-self: center;
   align-self: center;
+  width: 2.5rem;
+  grid-area: up-arrow;
+
+  &__icon {
+    width: 2.5rem;
+  }
 
   &:hover > &__icon {
     animation: blinkingPointerGoBack 2s infinite;
@@ -41,6 +56,7 @@
   font-weight: 600;
   justify-self: center;
   align-self: center;
+  grid-area: comment;
 }
 
 .copyright {
@@ -48,6 +64,8 @@
   justify-self: center;
   align-self: center;
   margin-bottom: 0.5rem;
+  font-size: 2rem;
+  grid-area: copyright;
 
   &__name {
     text-decoration: none;

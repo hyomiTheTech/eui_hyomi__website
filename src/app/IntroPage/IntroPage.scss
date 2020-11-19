@@ -17,6 +17,26 @@
   animation-name: moveInUp;
   animation-duration: 1s;
   animation-timing-function: ease-in;
+
+  @include respond(big-desktop) {
+    grid-template-rows: 4fr 5fr 3.2fr 0.4fr 0.4fr;
+  }
+
+  @include respond(desktop) {
+    grid-template-rows: 5fr 4fr 4.2fr 0.4fr 0.4fr;
+  }
+
+  @include respond(tab-land) {
+    grid-template-rows: 5fr 4fr 4.2fr 0.4fr 0.4fr;
+  }
+
+  @include respond(tab-port) {
+    grid-template-rows: 6fr 3fr 5.2fr 0.4fr 0.4fr;
+  }
+
+  @include respond(phone) {
+    grid-template-rows: 7fr 2.5fr 6.2fr 0.4fr 0.4fr;
+  }
 }
 .heading__primary {
   color: $color-white;
@@ -28,6 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   animation-name: moveInDown;
   animation-duration: 2s;
@@ -72,6 +93,7 @@
 
 .down-arrow {
   display: none;
+  width: 2.5rem;
   justify-self: center;
   grid-area: down-arrow;
 }

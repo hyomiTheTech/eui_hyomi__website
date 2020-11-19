@@ -1,6 +1,7 @@
 .logo-container {
   display: flex;
   justify-content: center;
+  grid-area: logo;
 
   &:hover .logo {
     opacity: 0.3;
@@ -11,6 +12,8 @@
 .logo {
   transition: 0.5s;
   margin: 0 0.5rem;
+  width: 2.5rem;
+
   &:hover {
     opacity: 1 !important;
   }
