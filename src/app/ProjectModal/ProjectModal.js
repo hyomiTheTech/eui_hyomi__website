@@ -18,6 +18,9 @@ const ConnectedProjectModal = ({ projectProperties }) => {
 
     document.getElementsByClassName("navigation__icon")[0].style.display =
       "block";
+
+    const navButton = document.getElementsByClassName("navigation__button")[0];
+    navButton.style.zIndex = 3;
   };
 
   return (

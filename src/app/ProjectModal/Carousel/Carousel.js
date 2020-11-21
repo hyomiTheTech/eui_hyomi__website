@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Carousel = ({ images }) => {
   const [counter, setCounter] = useState(1);
 
-  const size = 300;
+  const size = 250;
 
   const image = document.querySelectorAll(".carousel__image");
   const carousel = document.querySelector(".carousel__images");
@@ -47,7 +47,10 @@ const Carousel = ({ images }) => {
         className="carousel__button--previous"
         onClick={previousButtonHandler}
       >
-        <img src="./assets/images/logos/left-arrow.svg" />
+        <img
+          className="button__icon"
+          src="./assets/images/logos/left-arrow.svg"
+        />
       </button>
       <div className="carousel__images" onTransitionEnd={transitionEndHandler}>
         {images.map((image, i) => {
@@ -72,7 +75,10 @@ const Carousel = ({ images }) => {
         })}
       </div>
       <button className="carousel__button--next" onClick={nextButtonHandler}>
-        <img src="./assets/images/logos/right-arrow.svg" />
+        <img
+          className="button__icon"
+          src="./assets/images/logos/right-arrow.svg"
+        />
       </button>
     </div>
   );

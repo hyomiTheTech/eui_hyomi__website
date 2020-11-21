@@ -71,16 +71,16 @@
   animation-name: moveInUp;
   animation-duration: 1s;
   animation-timing-function: ease-in; }
-  @media (min-width: 1800px) {
+  @media (min-width: 112.5em) {
     .landing-page {
       grid-template-rows: 4fr 5fr 3.2fr 0.4fr 0.4fr; } }
-  @media (max-width: 1200px) {
+  @media (max-width: 75em) {
     .landing-page {
       grid-template-rows: 5fr 4fr 4.2fr 0.4fr 0.4fr; } }
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     .landing-page {
       grid-template-rows: 6fr 3fr 5.2fr 0.4fr 0.4fr; } }
-  @media (max-width: 480px) {
+  @media (max-width: 30em) {
     .landing-page {
       grid-template-rows: 7fr 2.5fr 6.2fr 0.4fr 0.4fr; } }
 
@@ -355,10 +355,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; }
-  @media (max-width: 480px) {
+  @media (max-width: 30em) {
     .project-modal {
       width: 100%;
-      height: 100%; } }
+      height: 100%;
+      top: -50%; } }
   .project-modal__header {
     font-size: 5rem;
     font-weight: 700;
@@ -367,16 +368,30 @@
     border-bottom: 1px solid black;
     margin-top: 1.5rem;
     margin-bottom: 2rem; }
+    @media (max-width: 30em) {
+      .project-modal__header {
+        font-size: 9rem;
+        letter-spacing: 2rem;
+        margin: 5rem 0; } }
   .project-modal__description {
-    margin: 2rem; }
+    margin: 2rem;
+    font-size: 4rem;
+    width: 75rem; }
 
 .close-button {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem; }
+  @media (max-width: 30em) {
+    .close-button {
+      right: 5rem;
+      top: 4rem; } }
   .close-button__icon {
     cursor: pointer;
     width: 2.5rem; }
+    @media (max-width: 30em) {
+      .close-button__icon {
+        width: 5rem; } }
 
 .anchor-tag-container {
   display: flex;
@@ -384,9 +399,14 @@
   width: 30rem;
   justify-content: space-between;
   margin: 3rem; }
+  @media (max-width: 30em) {
+    .anchor-tag-container {
+      width: 78rem; } }
 
 .anchor-tag {
   width: 12rem;
+  font-size: 4rem;
+  padding: 2rem;
   height: 4rem;
   border: 1px solid black;
   display: flex;
@@ -394,39 +414,58 @@
   align-items: center;
   color: black;
   text-decoration: none; }
+  @media (max-width: 30em) {
+    .anchor-tag {
+      width: 28rem;
+      font-size: 4rem;
+      padding: 4rem; } }
 
 .carousel {
-  width: 300px;
+  width: 250px;
   overflow: hidden; }
   .carousel__images {
     display: flex;
     width: 100%;
-    height: 25rem;
-    transform: translateX(-300px); }
+    transform: translateX(-250px); }
+    @media (max-width: 30em) {
+      .carousel__images {
+        height: 70rem; } }
   .carousel__image {
-    width: 300px; }
+    width: 250px; }
   .carousel__button--previous {
     position: absolute;
-    top: 34%;
+    top: 24%;
     z-index: 3;
-    left: 20%;
+    left: 3%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer; }
+    @media (max-width: 30em) {
+      .carousel__button--previous {
+        top: 57rem;
+        left: 2rem; } }
     .carousel__button--previous:focus {
       outline: 0; }
   .carousel__button--next {
     position: absolute;
-    top: 34%;
+    top: 24%;
     z-index: 3;
-    right: 20%;
+    right: 3%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer; }
+    @media (max-width: 30em) {
+      .carousel__button--next {
+        top: 57rem;
+        right: 2rem; } }
     .carousel__button--next:focus {
       outline: 0; }
+
+@media (max-width: 30em) {
+  .button__icon {
+    width: 6rem; } }
 
 .contact {
   height: 60rem;
@@ -496,6 +535,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; }
+  @media (max-width: 30em) {
+    .contact-modal {
+      width: 100%;
+      height: 100%; } }
   .contact-modal__heading {
     font-size: 3.5rem;
     font-weight: 700;
@@ -545,16 +588,16 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
-  @media (min-width: 1800px) {
+  @media (min-width: 112.5em) {
     html {
       font-size: 62.5%; } }
-  @media (max-width: 1200px) {
+  @media (max-width: 75em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     html {
       font-size: 30%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 30em) {
     html {
       font-size: 20%; } }
 

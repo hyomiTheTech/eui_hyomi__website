@@ -27,8 +27,10 @@ const ConnectedProject = ({
     const wrapper = document.getElementById("page-wrapper");
     wrapper.classList.add("blur");
 
-    document.getElementsByClassName("navigation__icon")[0].style.display =
-      "none";
+    const navIcon = document.getElementsByClassName("navigation__icon")[0];
+    navIcon.style.display = "none";
+    const navButton = document.getElementsByClassName("navigation__button")[0];
+    navButton.style.zIndex = -1;
   };
   return (
     <figure className="project">
