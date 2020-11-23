@@ -27,15 +27,13 @@
   }
 
   @include respond(tab-land) {
-    grid-template-rows: 5fr 4fr 4.2fr 0.4fr 0.4fr;
+    grid-template-rows: 5fr 5fr 4.2fr 0.4fr 0.4fr;
+    grid-template-columns: 1fr 0.6fr 0.3fr 0.6fr 1fr;
   }
 
   @include respond(tab-port) {
     grid-template-rows: 6fr 3fr 5.2fr 0.4fr 0.4fr;
-  }
-
-  @include respond(phone) {
-    grid-template-rows: 7fr 2.5fr 6.2fr 0.4fr 0.4fr;
+    grid-template-columns: 1fr 1.2fr 0.3fr 1.2fr 1fr;
   }
 }
 .heading__primary {

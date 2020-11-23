@@ -26,6 +26,10 @@
     border-bottom: 1px solid black;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+
+    @include respond(phone) {
+      font-size: 8rem;
+    }
   }
 }
 
@@ -34,12 +38,23 @@
   flex-direction: column;
   align-items: center;
 
+  @include respond(phone) {
+    width: 80%;
+    height: 80%;
+  }
+
   &__input {
     background-color: white;
     border: none;
     height: 3rem;
     width: 30rem;
     margin: 0.5rem;
+
+    @include respond(phone) {
+      height: 6rem;
+      width: 90%;
+      margin: 1.5rem;
+    }
   }
 
   &__message {
@@ -49,6 +64,12 @@
     width: 30rem;
     margin: 0.5rem;
     resize: none;
+
+    @include respond(phone) {
+      height: 60%;
+      width: 90%;
+      margin: 1.5rem;
+    }
   }
 
   &__submit-button {
@@ -64,5 +85,12 @@
     margin-top: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
+
+    @include respond(phone) {
+      width: 35%;
+      height: 7%;
+      font-size: 3rem;
+      margin: 5rem;
+    }
   }
 }

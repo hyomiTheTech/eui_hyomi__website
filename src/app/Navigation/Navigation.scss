@@ -69,7 +69,7 @@
 
   &__icon {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
 
     &,
     &::before,
@@ -78,6 +78,10 @@
       height: 2px;
       background-color: gray;
       display: inline-block;
+
+      @include respond(tab-port) {
+        width: 5rem;
+      }
     }
 
     &::before,
@@ -90,9 +94,17 @@
 
     &::before {
       top: -1rem;
+
+      @include respond(tab-port) {
+        top: -1.5rem;
+      }
     }
     &::after {
       top: 1rem;
+
+      @include respond(tab-port) {
+        top: 1.5rem;
+      }
     }
   }
 

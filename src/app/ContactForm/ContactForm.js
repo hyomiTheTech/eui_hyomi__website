@@ -10,6 +10,9 @@ const ContactForm = () => {
     wrapper.classList.remove("blur");
 
     document.querySelector(".navigation__icon").style.display = "block";
+
+    const navButton = document.getElementsByClassName("navigation__button")[0];
+    navButton.style.zIndex = 3;
   };
 
   const sendEmail = (e) => {
