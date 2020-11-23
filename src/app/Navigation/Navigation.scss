@@ -4,15 +4,30 @@
   }
 
   &__button {
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
     position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
+    right: 2.5rem;
+    top: 2rem;
     border-radius: 50%;
     z-index: 3;
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-land) {
+      top: 3rem;
+      right: 4rem;
+    }
+
+    @include respond(tab-port) {
+      top: 5rem;
+      right: 5rem;
+    }
+
+    @include respond(phone) {
+      top: 4rem;
+      right: 5.5rem;
+    }
   }
 
   &__nav {
@@ -69,7 +84,7 @@
 
   &__icon {
     position: relative;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     &,
     &::before,
@@ -80,7 +95,11 @@
       display: inline-block;
 
       @include respond(tab-port) {
-        width: 5rem;
+        width: 5.5rem;
+      }
+
+      @include respond(phone) {
+        width: 6rem;
       }
     }
 
@@ -96,14 +115,22 @@
       top: -1rem;
 
       @include respond(tab-port) {
-        top: -1.5rem;
+        top: -2rem;
+      }
+
+      @include respond(phone) {
+        top: -2rem;
       }
     }
     &::after {
       top: 1rem;
 
       @include respond(tab-port) {
-        top: 1.5rem;
+        top: 2rem;
+      }
+
+      @include respond(phone) {
+        top: 2rem;
       }
     }
   }

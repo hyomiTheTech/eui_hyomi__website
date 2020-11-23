@@ -4,36 +4,25 @@
     fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
-  display: grid;
-  grid-template-columns: 1.5fr 0.6fr 0.3fr 0.6fr 1.5fr;
-  grid-template-rows: 4fr 5fr 3fr 0.5fr 0.5fr;
-  grid-template-areas:
-    " . . . . .  "
-    " . header header header .  "
-    " . . . . .  "
-    " . . scroll . .  "
-    " . . down-arrow . .  ";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   animation-name: moveInUp;
   animation-duration: 1s;
   animation-timing-function: ease-in;
 
   @include respond(big-desktop) {
-    grid-template-rows: 4fr 5fr 3.2fr 0.4fr 0.4fr;
   }
 
   @include respond(desktop) {
-    grid-template-rows: 5fr 4fr 4.2fr 0.4fr 0.4fr;
   }
 
   @include respond(tab-land) {
-    grid-template-rows: 5fr 5fr 4.2fr 0.4fr 0.4fr;
-    grid-template-columns: 1fr 0.6fr 0.3fr 0.6fr 1fr;
   }
 
   @include respond(tab-port) {
-    grid-template-rows: 6fr 3fr 5.2fr 0.4fr 0.4fr;
-    grid-template-columns: 1fr 1.2fr 0.3fr 1.2fr 1fr;
   }
 }
 .heading__primary {
@@ -41,12 +30,13 @@
   text-transform: uppercase;
   border: 1px solid $color-white;
   border-color: $color-border-white;
-  grid-area: header;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 12rem 11rem;
 
   animation-name: moveInDown;
   animation-duration: 2s;
@@ -70,28 +60,36 @@
   }
 }
 
-.scroll-button {
-  grid-area: scroll;
-  color: $color-white;
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 0.5rem;
-  display: grid;
-  justify-self: center;
-  cursor: pointer;
-  animation: logoStart 4s;
-  animation-direction: normal;
-  text-decoration: none;
+.start-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &:hover ~ .down-arrow {
-    animation: blinkingPointerStart 2s infinite;
-    display: grid;
+  position: absolute;
+  bottom: 1%;
+
+  &__label {
+    color: $color-white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+
+    justify-self: center;
+    cursor: pointer;
+    animation: logoStart 4s;
+    animation-direction: normal;
+    text-decoration: none;
   }
-}
 
-.down-arrow {
-  display: none;
-  width: 2.5rem;
-  justify-self: center;
-  grid-area: down-arrow;
+  &__icon {
+    opacity: 0;
+    width: 2.5rem;
+    justify-self: center;
+    margin-top: 0.5rem;
+  }
+
+  &:hover > &__icon {
+    animation: blinkingPointerStart 2s infinite;
+    opacity: 1;
+  }
 }

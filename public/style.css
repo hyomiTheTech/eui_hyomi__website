@@ -64,35 +64,25 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
-  display: grid;
-  grid-template-columns: 1.5fr 0.6fr 0.3fr 0.6fr 1.5fr;
-  grid-template-rows: 4fr 5fr 3fr 0.5fr 0.5fr;
-  grid-template-areas: " . . . . .  " " . header header header .  " " . . . . .  " " . . scroll . .  " " . . down-arrow . .  ";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   animation-name: moveInUp;
   animation-duration: 1s;
   animation-timing-function: ease-in; }
-  @media (min-width: 112.5em) {
-    .landing-page {
-      grid-template-rows: 4fr 5fr 3.2fr 0.4fr 0.4fr; } }
-  @media (max-width: 75em) {
-    .landing-page {
-      grid-template-rows: 5fr 4fr 4.2fr 0.4fr 0.4fr; } }
-  @media (max-width: 48em) {
-    .landing-page {
-      grid-template-rows: 6fr 3fr 5.2fr 0.4fr 0.4fr;
-      grid-template-columns: 1fr 1.2fr 0.3fr 1.2fr 1fr; } }
 
 .heading__primary {
   color: #fff;
   text-transform: uppercase;
   border: 1px solid #fff;
   border-color: rgba(220, 255, 255, 0.35);
-  grid-area: header;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 12rem 11rem;
   animation-name: moveInDown;
   animation-duration: 2s;
   animation-timing-function: ease-in; }
@@ -110,27 +100,30 @@
     letter-spacing: 1rem;
     padding-top: 0.7rem; }
 
-.scroll-button {
-  grid-area: scroll;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 0.5rem;
-  display: grid;
-  justify-self: center;
-  cursor: pointer;
-  animation: logoStart 4s;
-  animation-direction: normal;
-  text-decoration: none; }
-  .scroll-button:hover ~ .down-arrow {
+.start-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 1%; }
+  .start-button__label {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    justify-self: center;
+    cursor: pointer;
+    animation: logoStart 4s;
+    animation-direction: normal;
+    text-decoration: none; }
+  .start-button__icon {
+    opacity: 0;
+    width: 2.5rem;
+    justify-self: center;
+    margin-top: 0.5rem; }
+  .start-button:hover > .start-button__icon {
     animation: blinkingPointerStart 2s infinite;
-    display: grid; }
-
-.down-arrow {
-  display: none;
-  width: 2.5rem;
-  justify-self: center;
-  grid-area: down-arrow; }
+    opacity: 1; }
 
 .logo-container {
   display: flex;
@@ -190,15 +183,23 @@
   display: none; }
 
 .navigation__button {
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  right: 2.5rem;
+  top: 2rem;
   border-radius: 50%;
   z-index: 3;
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 48em) {
+    .navigation__button {
+      top: 5rem;
+      right: 5rem; } }
+  @media (max-width: 30em) {
+    .navigation__button {
+      top: 4rem;
+      right: 5.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -247,7 +248,7 @@
 
 .navigation__icon {
   position: relative;
-  margin-top: 5rem; }
+  margin-top: 3rem; }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3.5rem;
     height: 2px;
@@ -255,7 +256,10 @@
     display: inline-block; }
     @media (max-width: 48em) {
       .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-        width: 5rem; } }
+        width: 5.5rem; } }
+    @media (max-width: 30em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 6rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
@@ -265,12 +269,18 @@
     top: -1rem; }
     @media (max-width: 48em) {
       .navigation__icon::before {
-        top: -1.5rem; } }
+        top: -2rem; } }
+    @media (max-width: 30em) {
+      .navigation__icon::before {
+        top: -2rem; } }
   .navigation__icon::after {
     top: 1rem; }
     @media (max-width: 48em) {
       .navigation__icon::after {
-        top: 1.5rem; } }
+        top: 2rem; } }
+    @media (max-width: 30em) {
+      .navigation__icon::after {
+        top: 2rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1.3rem; }
