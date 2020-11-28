@@ -155,8 +155,8 @@
   margin: 8rem; }
 
 .about-me {
-  font-size: 2.5rem;
-  width: 80rem; }
+  font-size: 2rem;
+  width: 80%; }
 
 .portfolio {
   height: 100vh;
@@ -364,36 +364,48 @@
   background: white;
   width: 80rem;
   height: 70rem;
-  top: -35%;
+  top: -100%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 1s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: space-between; }
+  @media (max-width: 64em) {
+    .project-modal {
+      width: 80%;
+      height: 80%; } }
   @media (max-width: 30em) {
     .project-modal {
       width: 100%;
       height: 100%;
       top: -50%; } }
   .project-modal__header {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: 1.3rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid black;
     margin-top: 1.5rem;
     margin-bottom: 2rem; }
+    @media (max-width: 48em) {
+      .project-modal__header {
+        font-size: 5rem;
+        letter-spacing: 2rem;
+        margin: 2rem 0; } }
     @media (max-width: 30em) {
       .project-modal__header {
-        font-size: 9rem;
+        font-size: 6rem;
         letter-spacing: 2rem;
-        margin: 5rem 0; } }
+        margin: 10rem 0 0 0; } }
   .project-modal__description {
     margin: 2rem;
-    font-size: 4rem;
-    width: 75rem; }
+    font-size: 1.5rem;
+    width: 60%; }
+    @media (max-width: 48em) {
+      .project-modal__description {
+        font-size: 2.5rem; } }
 
 .close-button {
   position: absolute;
@@ -406,24 +418,27 @@
   .close-button__icon {
     cursor: pointer;
     width: 2.5rem; }
+    @media (max-width: 48em) {
+      .close-button__icon {
+        width: 3rem; } }
     @media (max-width: 30em) {
       .close-button__icon {
-        width: 5rem; } }
+        width: 4rem; } }
 
 .anchor-tag-container {
   display: flex;
   justify-self: end;
-  width: 30rem;
-  justify-content: space-between;
+  width: 60%;
+  justify-content: space-around;
   margin: 3rem; }
   @media (max-width: 30em) {
     .anchor-tag-container {
-      width: 78rem; } }
+      width: 80%; } }
 
 .anchor-tag {
   width: 12rem;
-  font-size: 4rem;
-  padding: 2rem;
+  font-size: 2rem;
+  padding: 1rem;
   height: 4rem;
   border: 1px solid black;
   display: flex;
@@ -431,58 +446,68 @@
   align-items: center;
   color: black;
   text-decoration: none; }
+  @media (max-width: 48em) {
+    .anchor-tag {
+      width: 15rem;
+      font-size: 3rem;
+      padding: 2rem; } }
   @media (max-width: 30em) {
     .anchor-tag {
-      width: 28rem;
-      font-size: 4rem;
-      padding: 4rem; } }
+      width: 18rem;
+      font-size: 3rem;
+      padding: 2.5rem; } }
 
 .carousel {
-  width: 250px;
+  width: 300px;
   overflow: hidden; }
+  @media (max-width: 64em) {
+    .carousel {
+      width: 250px; } }
   .carousel__images {
     display: flex;
-    width: 100%;
-    transform: translateX(-250px); }
-    @media (max-width: 30em) {
+    width: 300px;
+    transform: translateX(-300px); }
+    @media (max-width: 64em) {
       .carousel__images {
-        height: 70rem; } }
+        width: 250px;
+        transform: translateX(-250px); } }
   .carousel__image {
-    width: 250px; }
+    width: 300px; }
+    @media (max-width: 64em) {
+      .carousel__image {
+        width: 250px; } }
   .carousel__button--previous {
     position: absolute;
-    top: 24%;
+    top: 39%;
     z-index: 3;
-    left: 3%;
+    left: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer; }
     @media (max-width: 30em) {
       .carousel__button--previous {
-        top: 57rem;
-        left: 2rem; } }
+        top: 45%; } }
     .carousel__button--previous:focus {
       outline: 0; }
   .carousel__button--next {
     position: absolute;
-    top: 24%;
+    top: 39%;
     z-index: 3;
-    right: 3%;
+    right: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer; }
     @media (max-width: 30em) {
       .carousel__button--next {
-        top: 57rem;
-        right: 2rem; } }
+        top: 45%; } }
     .carousel__button--next:focus {
       outline: 0; }
 
 @media (max-width: 30em) {
   .button__icon {
-    width: 6rem; } }
+    width: 5rem; } }
 
 .contact {
   height: 60rem;
@@ -544,7 +569,7 @@
   background: #f3f3f3;
   width: 50rem;
   height: 60rem;
-  bottom: -150%;
+  bottom: -200%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 1s ease-in-out;
@@ -636,7 +661,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 48em) {
     html {
-      font-size: 30%; } }
+      font-size: 35%; } }
 
 body {
   font-family: "Lato", sans-serif;

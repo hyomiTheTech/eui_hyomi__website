@@ -33,11 +33,11 @@ html {
   }
 
   @include respond(tab-land) {
-    font-size: 40%;
+    font-size: 45%;
   }
 
   @include respond(tab-port) {
-    font-size: 30%;
+    font-size: 35%;
   }
 }
 

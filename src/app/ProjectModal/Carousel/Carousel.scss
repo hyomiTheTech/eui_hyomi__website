@@ -1,33 +1,41 @@
 .carousel {
-  width: 250px;
+  width: 300px;
   overflow: hidden;
+  @include respond(tab-lab) {
+    width: 250px;
+  }
 
   &__images {
     display: flex;
-    width: 100%;
-    @include respond(phone) {
-      height: 70rem;
+    width: 300px;
+    transform: translateX(-300px);
+
+    @include respond(tab-lab) {
+      width: 250px;
+      transform: translateX(-250px);
     }
-    transform: translateX(-250px);
   }
 
   &__image {
-    width: 250px;
+    width: 300px;
+
+    @include respond(tab-lab) {
+      width: 250px;
+    }
   }
 
   &__button--previous {
     position: absolute;
-    top: 24%;
+    top: 39%;
     z-index: 3;
-    left: 3%;
+    left: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
 
     @include respond(phone) {
-      top: 57rem;
-      left: 2rem;
+      top: 45%;
     }
 
     &:focus {
@@ -37,17 +45,16 @@
 
   &__button--next {
     position: absolute;
-    top: 24%;
+    top: 39%;
     z-index: 3;
-    right: 3%;
+    right: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
 
     @include respond(phone) {
-      top: 57rem;
-      right: 2rem;
+      top: 45%;
     }
 
     &:focus {
@@ -58,6 +65,6 @@
 
 .button__icon {
   @include respond(phone) {
-    width: 6rem;
+    width: 5rem;
   }
 }

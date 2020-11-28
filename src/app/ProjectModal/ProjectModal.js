@@ -11,7 +11,7 @@ const ConnectedProjectModal = ({ projectProperties }) => {
 
   const closeButtonHandler = () => {
     let modal = document.getElementsByClassName("project-modal");
-    modal[0].style.top = "-50%";
+    modal[0].style.top = "-100%";
 
     const wrapper = document.getElementById("page-wrapper");
     wrapper.classList.remove("blur");

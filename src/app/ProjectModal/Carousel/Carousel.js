@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Carousel = ({ images }) => {
   const [counter, setCounter] = useState(1);
-
-  const size = 250;
-
+  const [size, setSize] = useState(300);
   const image = document.querySelectorAll(".carousel__image");
   const carousel = document.querySelector(".carousel__images");
 
@@ -34,6 +32,15 @@ const Carousel = ({ images }) => {
       }
     }
   };
+
+  let mediaQuery = window.matchMedia("(min-width: 768px)");
+  useEffect(() => {
+    if (mediaQuery.matches) {
+      setSize(300);
+    } else {
+      setSize(250);
+    }
+  }, [mediaQuery.matches]);
 
   useEffect(() => {
     if (carousel) {
