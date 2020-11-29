@@ -5,6 +5,7 @@ const ContactForm = () => {
   const closeButtonHandler = () => {
     let contactForm = document.querySelector(".contact-modal");
     contactForm.style.bottom = "-200%";
+    contactForm.style.top = null;
 
     const wrapper = document.querySelector("#page-wrapper");
     wrapper.classList.remove("blur");
