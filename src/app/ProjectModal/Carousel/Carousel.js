@@ -14,7 +14,7 @@ const Carousel = ({ images }) => {
   };
 
   const nextButtonHandler = () => {
-    if (counter < 7) {
+    if (counter < images.length - 1) {
       setCounter(counter + 1);
       carousel.style.transition = "all 0.7s ease-in-out";
     }
@@ -28,7 +28,7 @@ const Carousel = ({ images }) => {
       }
       if (image[counter].id === "firstClone") {
         carousel.style.transition = "none";
-        setCounter(image.length - 7);
+        setCounter(1);
       }
     }
   };

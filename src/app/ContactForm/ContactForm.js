@@ -77,7 +77,7 @@ const ContactForm = () => {
           type="submit"
           name="submit"
         >
-          SEND MAIL
+          SUBMIT
         </button>
       </form>
     </div>

@@ -9,14 +9,10 @@ const projects = [
     modalProperties: {
       name: "TWIDDLER",
       images: [
-        "./assets/images/project-image/twiddler/image 6.png",
+        "./assets/images/project-image/twiddler/image 2.png",
         "./assets/images/project-image/twiddler/image 1.png",
         "./assets/images/project-image/twiddler/image 2.png",
-        "./assets/images/project-image/twiddler/image 3.png",
-        "./assets/images/project-image/twiddler/image 4.png",
-        "./assets/images/project-image/twiddler/image 5.png",
-        "./assets/images/project-image/twiddler/image 6.png",
-        "./assets/images/project-image/twiddler/twiddler.png",
+        "./assets/images/project-image/twiddler/image 1.png",
       ],
       description: "David is the best Software Engineer in the world!!!",
       site: "https://hyomi-twiddler.herokuapp.com/",
