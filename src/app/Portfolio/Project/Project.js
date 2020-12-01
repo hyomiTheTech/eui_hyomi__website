@@ -12,7 +12,7 @@ const mapDispatchToProps = (dispatch) => {
 const ConnectedProject = ({
   imgSrc,
   projectName,
-  techStack,
+  shortDescription,
   modalProperties,
   getProjectProperties,
   projectProperties,
@@ -38,7 +38,7 @@ const ConnectedProject = ({
       <figcaption className="project__caption">
         <div className="project__description">
           <h3 className="project__name">&nbsp;{projectName}</h3>
-          <h5 className="project__tech">{techStack}</h5>
+          <h5 className="project__tech">{shortDescription}</h5>
         </div>
         <a className="project__button" onClick={exploreClickHandler}>
           EXPLORE

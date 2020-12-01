@@ -26,7 +26,11 @@ const Contact = () => {
           alt="up arrow"
         />
       </a>
-      <h1 className="comment">Every application has been made with love.</h1>
+      <h1 className="contact-heading__primary">CONTACT</h1>
+      <h2 className="contact-heading__secondary">
+        Have a question or want to work together? <br />
+        Let's keep in touch.
+      </h2>
       <a className="contact__button" onClick={contactButtonHandler}>
         CONTACT ME
       </a>

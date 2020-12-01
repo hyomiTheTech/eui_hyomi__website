@@ -160,7 +160,7 @@
 
 .portfolio {
   height: 100vh;
-  background-color: #f3f3f3;
+  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,7 +172,7 @@
   justify-content: center; }
 
 .heading__secondary {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   letter-spacing: 1.3rem;
   padding-bottom: 1rem;
@@ -325,7 +325,7 @@
     height: 30rem;
     padding: 1rem;
     transition: all 0.5s ease-in-out;
-    filter: brightness(70%); }
+    filter: brightness(90%) grayscale(100%); }
   .project__description {
     grid-area: description;
     display: flex;
@@ -401,6 +401,13 @@
         font-size: 6rem;
         letter-spacing: 2rem;
         margin: 8rem 0 3rem 0; } }
+  .project-modal__tech-stack {
+    font-size: 2rem;
+    margin: 1rem;
+    color: gray; }
+    @media (max-width: 48em) {
+      .project-modal__tech-stack {
+        font-size: 3rem; } }
   .project-modal__description {
     margin: 2rem;
     font-size: 1.5rem;
@@ -535,9 +542,9 @@
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-rows: 2fr 7fr 6fr 1fr 1.5fr;
-  grid-template-columns: 5.5fr 1fr 5.5fr;
-  grid-template-areas: ". up-arrow ." "comment comment comment" "button button button" ". logo ." "copyright copyright copyright"; }
+  grid-template-rows: 2fr 4fr 5fr 4fr 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: ". up-arrow ." ". heading ." ". comment ." "button button button" ". logo ." "copyright copyright copyright"; }
   .contact__button {
     display: flex;
     width: 15rem;
@@ -570,13 +577,25 @@
   .up-arrow:hover > .up-arrow__icon {
     animation: blinkingPointerGoBack 2s infinite; }
 
-.comment {
+.contact-heading__primary {
   color: #fff;
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 700;
+  width: 30rem;
   justify-self: center;
-  align-self: center;
-  grid-area: comment; }
+  letter-spacing: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+  margin: 3rem;
+  text-align: center;
+  grid-area: heading; }
+
+.contact-heading__secondary {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  grid-area: comment;
+  text-align: center; }
 
 .copyright {
   color: #969696;

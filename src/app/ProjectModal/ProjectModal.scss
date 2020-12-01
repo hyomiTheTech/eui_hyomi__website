@@ -46,6 +46,18 @@
     }
   }
 
+  &__tech-stack {
+    font-size: 2rem;
+    margin: 1rem;
+    color: gray;
+    // align-self: flex-start;
+    // margin-left: 10%;
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+  }
+
   &__description {
     margin: 2rem;
     font-size: 1.5rem;

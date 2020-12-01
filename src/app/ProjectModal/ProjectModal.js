@@ -8,9 +8,14 @@ const mapStateToProps = (state) => {
 };
 
 const ConnectedProjectModal = ({ projectProperties }) => {
-  const { name, images, description, site, githubSrc } = projectProperties;
-
-  const [top, setTop] = useState(0);
+  const {
+    name,
+    images,
+    techStack,
+    description,
+    site,
+    githubSrc,
+  } = projectProperties;
 
   const closeButtonHandler = () => {
     let modal = document.getElementsByClassName("project-modal");
@@ -47,18 +52,21 @@ const ConnectedProjectModal = ({ projectProperties }) => {
               alt="project-cover"
             />
           )}
+          <p className="project-modal__tech-stack">{techStack}</p>
           <p className="project-modal__description">{description}</p>
         </main>
       </Scrollbars>
       <div className="anchor-tag-container">
-        <a
-          className="anchor-tag"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={site}
-        >
-          Visit
-        </a>
+        {site === null ? null : (
+          <a
+            className="anchor-tag"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={site}
+          >
+            Visit
+          </a>
+        )}
         <a
           className="anchor-tag"
           target="_blank"

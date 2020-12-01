@@ -5,11 +5,12 @@
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-rows: 2fr 7fr 6fr 1fr 1.5fr;
-  grid-template-columns: 5.5fr 1fr 5.5fr;
+  grid-template-rows: 2fr 4fr 5fr 4fr 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     ". up-arrow ."
-    "comment comment comment"
+    ". heading ."
+    ". comment ."
     "button button button"
     ". logo ."
     "copyright copyright copyright";
@@ -56,13 +57,28 @@
   }
 }
 
-.comment {
-  color: $color-white;
-  font-size: 3rem;
-  font-weight: 600;
-  justify-self: center;
-  align-self: center;
-  grid-area: comment;
+.contact-heading {
+  &__primary {
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 700;
+    width: 30rem;
+    justify-self: center;
+    letter-spacing: 1.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    margin: 3rem;
+    text-align: center;
+    grid-area: heading;
+  }
+
+  &__secondary {
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    grid-area: comment;
+    text-align: center;
+  }
 }
 
 .copyright {
