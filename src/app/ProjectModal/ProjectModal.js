@@ -37,10 +37,18 @@ const ConnectedProjectModal = ({ projectProperties }) => {
       </label>
       <header className="project-modal__header">{name}</header>
       <Scrollbars autoHide>
-        <div className="testing">
-          <Carousel images={images} />
+        <main className="project-modal__content">
+          {images.length > 1 ? (
+            <Carousel images={images} />
+          ) : (
+            <img
+              className="project-modal__cover"
+              src={images[0]}
+              alt="project-cover"
+            />
+          )}
           <p className="project-modal__description">{description}</p>
-        </div>
+        </main>
       </Scrollbars>
       <div className="anchor-tag-container">
         <a

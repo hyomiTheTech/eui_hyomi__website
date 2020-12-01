@@ -1,35 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Carousel = ({ images }) => {
   const [counter, setCounter] = useState(1);
   const [size, setSize] = useState(300);
   const image = document.querySelectorAll(".carousel__image");
-  const carousel = document.querySelector(".carousel__images");
+  const carousel = useRef();
+
+  useEffect(() => {}, []);
 
   const previousButtonHandler = () => {
     if (counter > 0) {
       setCounter(counter - 1);
-      carousel.style.transition = "all 0.7s ease-in-out";
+      carousel.current.style.transition = "all 0.7s ease-in-out";
     }
   };
 
   const nextButtonHandler = () => {
     if (counter < images.length - 1) {
       setCounter(counter + 1);
-      carousel.style.transition = "all 0.7s ease-in-out";
+      carousel.current.style.transition = "all 0.7s ease-in-out";
     }
   };
 
   const transitionEndHandler = () => {
-    if (carousel) {
-      if (image[counter].id === "lastClone") {
-        carousel.style.transition = "none";
-        setCounter(image.length - 2);
-      }
-      if (image[counter].id === "firstClone") {
-        carousel.style.transition = "none";
-        setCounter(1);
-      }
+    if (image[counter].id === "lastClone") {
+      carousel.current.style.transition = "none";
+      setCounter(image.length - 2);
+    }
+    if (image[counter].id === "firstClone") {
+      carousel.current.style.transition = "none";
+      setCounter(1);
     }
   };
 
@@ -43,9 +43,7 @@ const Carousel = ({ images }) => {
   }, [mediaQuery.matches]);
 
   useEffect(() => {
-    if (carousel) {
-      carousel.style.transform = `translateX(${-size * counter}px)`;
-    }
+    carousel.current.style.transform = `translateX(${-size * counter}px)`;
   }, [counter]);
 
   return (
@@ -63,6 +61,7 @@ const Carousel = ({ images }) => {
         <div
           className="carousel__images"
           onTransitionEnd={transitionEndHandler}
+          ref={carousel}
         >
           {images.map((image, i) => {
             let id;

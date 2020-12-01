@@ -19,9 +19,22 @@ const projects = [
       githubSrc: "https://github.com/hyomiTheTech/twiddler",
     },
   },
+  {
+    projectName: "LUCKY PARKING",
+    imgSrc: "./assets/images/project-image/lucky-parking/lucky-parking.png",
+    techStack: "React, HTML, CSS",
+    modalProperties: {
+      name: "LUCKY PARKING",
+      images: ["./assets/images/project-image/lucky-parking/image 1.png"],
+      description:
+        "Lucky Parking seeks to educate and inform city planners about the effects of the City of Los Angeles’ parking policies by mapping the 10.5 million parking citations on a webapp that is easy to navigate and provides meaningful analysis to the public.",
+      site: "http://d2d1u2ou05os3m.cloudfront.net/",
+      githubSrc: "https://github.com/hackforla/lucky-parking",
+    },
+  },
   // {
   //   projectName: "IKEA PAGE",
-  //   imgSrc: "./assets/images/project-image/twiddler.png",
+  //   imgSrc: "./assets/images/project-image/twiddler/twiddler.png",
   //   techStack: "React, HTML, CSS",
   //   modalProperties: {
   //     name: "IKEA PAGE",

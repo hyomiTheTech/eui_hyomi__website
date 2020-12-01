@@ -31,6 +31,7 @@
     border-bottom: 1px solid black;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+    text-align: center;
 
     @include respond(tab-port) {
       font-size: 5rem;
@@ -48,11 +49,21 @@
   &__description {
     margin: 2rem;
     font-size: 1.5rem;
-    width: 60%;
+    width: 80%;
 
     @include respond(tab-port) {
       font-size: 2.5rem;
     }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cover {
+    width: 80%;
   }
 }
 
@@ -114,10 +125,4 @@
     font-size: 3rem;
     padding: 2.5rem;
   }
-}
-
-.testing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

@@ -166,7 +166,7 @@
   justify-content: center;
   align-items: center; }
 
-.image-container {
+.project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -324,7 +324,8 @@
     width: 35rem;
     height: 30rem;
     padding: 1rem;
-    transition: 0.5s; }
+    transition: all 0.5s ease-in-out;
+    filter: brightness(70%); }
   .project__description {
     grid-area: description;
     display: flex;
@@ -336,7 +337,8 @@
     border-bottom: 0.5px solid #fff;
     font-size: 2rem;
     font-weight: 400;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    text-align: center; }
   .project__tech {
     font-size: 1.5rem;
     margin-top: 0.5rem;
@@ -355,7 +357,7 @@
     .project__button:hover {
       border: 1px solid white; }
   .project:hover .project__cover-image {
-    filter: grayscale(100%) brightness(30%); }
+    filter: brightness(30%); }
   .project:hover .project__caption {
     opacity: 1; }
 
@@ -387,7 +389,8 @@
     padding-bottom: 0.5rem;
     border-bottom: 1px solid black;
     margin-top: 1.5rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-align: center; }
     @media (max-width: 48em) {
       .project-modal__header {
         font-size: 5rem;
@@ -401,10 +404,16 @@
   .project-modal__description {
     margin: 2rem;
     font-size: 1.5rem;
-    width: 60%; }
+    width: 80%; }
     @media (max-width: 48em) {
       .project-modal__description {
         font-size: 2.5rem; } }
+  .project-modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .project-modal__cover {
+    width: 80%; }
 
 .close-button {
   position: absolute;
@@ -455,11 +464,6 @@
       width: 18rem;
       font-size: 3rem;
       padding: 2.5rem; } }
-
-.testing {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 .carousel {
   width: 300px;
