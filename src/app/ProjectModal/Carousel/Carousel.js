@@ -49,44 +49,49 @@ const Carousel = ({ images }) => {
   }, [counter]);
 
   return (
-    <div className="carousel">
-      <button
-        className="carousel__button--previous"
-        onClick={previousButtonHandler}
-      >
-        <img
-          className="button__icon"
-          src="./assets/images/logos/left-arrow.svg"
-        />
-      </button>
-      <div className="carousel__images" onTransitionEnd={transitionEndHandler}>
-        {images.map((image, i) => {
-          let id;
+    <div>
+      <div className="carousel">
+        <button
+          className="carousel__button--previous"
+          onClick={previousButtonHandler}
+        >
+          <img
+            className="button__icon"
+            src="./assets/images/logos/left-arrow.svg"
+          />
+        </button>
+        <div
+          className="carousel__images"
+          onTransitionEnd={transitionEndHandler}
+        >
+          {images.map((image, i) => {
+            let id;
 
-          if (i === 0) {
-            id = "lastClone";
-          } else if (i === images.length - 1) {
-            id = "firstClone";
-          } else {
-            id = null;
-          }
-          return (
-            <img
-              className="carousel__image"
-              src={image}
-              alt={`image${i}`}
-              key={`${image}${i}`}
-              id={id}
-            />
-          );
-        })}
+            if (i === 0) {
+              id = "lastClone";
+            } else if (i === images.length - 1) {
+              id = "firstClone";
+            } else {
+              id = null;
+            }
+            return (
+              <img
+                className="carousel__image"
+                src={image}
+                alt={`image${i}`}
+                key={`${image}${i}`}
+                id={id}
+              />
+            );
+          })}
+        </div>
+        <button className="carousel__button--next" onClick={nextButtonHandler}>
+          <img
+            className="button__icon"
+            src="./assets/images/logos/right-arrow.svg"
+          />
+        </button>
       </div>
-      <button className="carousel__button--next" onClick={nextButtonHandler}>
-        <img
-          className="button__icon"
-          src="./assets/images/logos/right-arrow.svg"
-        />
-      </button>
     </div>
   );
 };

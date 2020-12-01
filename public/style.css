@@ -362,7 +362,7 @@
 .project-modal {
   position: fixed;
   background: white;
-  width: 80rem;
+  width: 60rem;
   height: 70rem;
   top: -100%;
   left: 50%;
@@ -370,8 +370,7 @@
   transition: all 1s ease-in-out;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
+  align-items: center; }
   @media (max-width: 64em) {
     .project-modal {
       width: 80%;
@@ -398,7 +397,7 @@
       .project-modal__header {
         font-size: 6rem;
         letter-spacing: 2rem;
-        margin: 10rem 0 0 0; } }
+        margin: 8rem 0 3rem 0; } }
   .project-modal__description {
     margin: 2rem;
     font-size: 1.5rem;
@@ -457,51 +456,68 @@
       font-size: 3rem;
       padding: 2.5rem; } }
 
+.testing {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .carousel {
   width: 300px;
   overflow: hidden; }
-  @media (max-width: 64em) {
+  @media (max-width: 48em) {
     .carousel {
       width: 250px; } }
   .carousel__images {
     display: flex;
     width: 300px;
     transform: translateX(-300px); }
-    @media (max-width: 64em) {
+    @media (max-width: 48em) {
       .carousel__images {
         width: 250px;
         transform: translateX(-250px); } }
   .carousel__image {
     width: 300px; }
-    @media (max-width: 64em) {
+    @media (max-width: 48em) {
       .carousel__image {
         width: 250px; } }
   .carousel__button--previous {
     position: absolute;
-    top: 39%;
+    top: 31%;
     z-index: 3;
     left: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer; }
+    @media (max-width: 75em) {
+      .carousel__button--previous {
+        top: 37%; } }
+    @media (max-width: 48em) {
+      .carousel__button--previous {
+        top: 31%; } }
     @media (max-width: 30em) {
       .carousel__button--previous {
-        top: 45%; } }
+        top: 25%; } }
     .carousel__button--previous:focus {
       outline: 0; }
   .carousel__button--next {
     position: absolute;
-    top: 39%;
+    top: 31%;
     z-index: 3;
     right: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer; }
+    @media (max-width: 75em) {
+      .carousel__button--next {
+        top: 37%; } }
+    @media (max-width: 48em) {
+      .carousel__button--next {
+        top: 31%; } }
     @media (max-width: 30em) {
       .carousel__button--next {
-        top: 45%; } }
+        top: 25%; } }
     .carousel__button--next:focus {
       outline: 0; }
 

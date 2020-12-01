@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Scrollbars } from "react-custom-scrollbars";
 import { connect } from "react-redux";
 import Carousel from "./Carousel";
 
@@ -8,6 +9,8 @@ const mapStateToProps = (state) => {
 
 const ConnectedProjectModal = ({ projectProperties }) => {
   const { name, images, description, site, githubSrc } = projectProperties;
+
+  const [top, setTop] = useState(0);
 
   const closeButtonHandler = () => {
     let modal = document.getElementsByClassName("project-modal");
@@ -33,8 +36,12 @@ const ConnectedProjectModal = ({ projectProperties }) => {
         />
       </label>
       <header className="project-modal__header">{name}</header>
-      <Carousel images={images} />
-      <p className="project-modal__description">{description}</p>
+      <Scrollbars autoHide>
+        <div className="testing">
+          <Carousel images={images} />
+          <p className="project-modal__description">{description}</p>
+        </div>
+      </Scrollbars>
       <div className="anchor-tag-container">
         <a
           className="anchor-tag"

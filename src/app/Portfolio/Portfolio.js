@@ -14,7 +14,7 @@ const projects = [
         "./assets/images/project-image/twiddler/image 2.png",
         "./assets/images/project-image/twiddler/image 1.png",
       ],
-      description: "David is the best Software Engineer in the world!!!",
+      description: `Twiddler is one of the first apps I made since I started coding. The app mimics a Twitter feed and generates random messages from time to time. This app is probably the simplest program I will ever code but the sense of achievement and satisfaction it gave me was the greatest.`,
       site: "https://hyomi-twiddler.herokuapp.com/",
       githubSrc: "https://github.com/hyomiTheTech/twiddler",
     },

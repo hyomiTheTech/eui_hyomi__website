@@ -1,7 +1,7 @@
 .carousel {
   width: 300px;
   overflow: hidden;
-  @include respond(tab-lab) {
+  @include respond(tab-port) {
     width: 250px;
   }
 
@@ -10,7 +10,7 @@
     width: 300px;
     transform: translateX(-300px);
 
-    @include respond(tab-lab) {
+    @include respond(tab-port) {
       width: 250px;
       transform: translateX(-250px);
     }
@@ -19,14 +19,14 @@
   &__image {
     width: 300px;
 
-    @include respond(tab-lab) {
+    @include respond(tab-port) {
       width: 250px;
     }
   }
 
   &__button--previous {
     position: absolute;
-    top: 39%;
+    top: 31%;
     z-index: 3;
     left: 5%;
     background-color: transparent;
@@ -34,8 +34,16 @@
     color: white;
     cursor: pointer;
 
+    @include respond(desktop) {
+      top: 37%;
+    }
+
+    @include respond(tab-port) {
+      top: 31%;
+    }
+
     @include respond(phone) {
-      top: 45%;
+      top: 25%;
     }
 
     &:focus {
@@ -45,7 +53,7 @@
 
   &__button--next {
     position: absolute;
-    top: 39%;
+    top: 31%;
     z-index: 3;
     right: 5%;
     background-color: transparent;
@@ -53,8 +61,16 @@
     color: white;
     cursor: pointer;
 
+    @include respond(desktop) {
+      top: 37%;
+    }
+
+    @include respond(tab-port) {
+      top: 31%;
+    }
+
     @include respond(phone) {
-      top: 45%;
+      top: 25%;
     }
 
     &:focus {
