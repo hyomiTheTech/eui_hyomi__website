@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: #fff;
 }
 
 .profile {
@@ -15,8 +15,14 @@
 }
 
 .about-me {
+  margin-top: 2rem;
   font-size: 2rem;
   // opacity: 0.6;
 
-  width: 80%;
+  width: 60%;
+}
+
+.testing {
+  font-size: 3rem;
+  color: rgb(167, 167, 167);
 }

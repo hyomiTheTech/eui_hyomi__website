@@ -13,6 +13,7 @@
     z-index: 3;
     text-align: center;
     cursor: pointer;
+    animation: logoStart 5s;
 
     @include respond(tab-land) {
       top: 3rem;

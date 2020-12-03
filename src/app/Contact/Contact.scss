@@ -1,11 +1,11 @@
 .contact {
-  height: 60rem;
+  height: 50rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-rows: 2fr 4fr 5fr 4fr 1fr 1.5fr;
+  grid-template-rows: 2fr 3fr 6fr 4fr 1fr 1.5fr;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
     ". up-arrow ."
@@ -58,23 +58,24 @@
 }
 
 .contact-heading {
-  &__primary {
-    color: $color-white;
-    font-size: 4rem;
-    font-weight: 700;
-    width: 30rem;
-    justify-self: center;
-    letter-spacing: 1.3rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid white;
-    margin: 3rem;
-    text-align: center;
-    grid-area: heading;
-  }
+  // &__primary {
+  //   color: $color-white;
+  //   font-size: 3.5rem;
+  //   font-weight: 700;
+  //   width: 30rem;
+  //   justify-self: center;
+  //   letter-spacing: 1.3rem;
+  //   padding-bottom: 1rem;
+  //   border-bottom: 1px solid white;
+  //   margin: 4rem 0 2rem 0;
+  //   text-align: center;
+  //   grid-area: heading;
+  //   border-bottom-color: rgba(255, 255, 255, 0.7);
+  // }
 
   &__secondary {
     color: $color-white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
     grid-area: comment;
     text-align: center;

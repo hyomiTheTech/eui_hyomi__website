@@ -146,7 +146,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee; }
+  background-color: #fff; }
 
 .profile {
   filter: grayscale(50%);
@@ -155,8 +155,13 @@
   margin: 8rem; }
 
 .about-me {
+  margin-top: 2rem;
   font-size: 2rem;
-  width: 80%; }
+  width: 60%; }
+
+.testing {
+  font-size: 3rem;
+  color: #a7a7a7; }
 
 .portfolio {
   height: 100vh;
@@ -191,7 +196,8 @@
   border-radius: 50%;
   z-index: 3;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  animation: logoStart 5s; }
   @media (max-width: 48em) {
     .navigation__button {
       top: 5rem;
@@ -537,12 +543,12 @@
     width: 5rem; } }
 
 .contact {
-  height: 60rem;
+  height: 50rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-rows: 2fr 4fr 5fr 4fr 1fr 1.5fr;
+  grid-template-rows: 2fr 3fr 6fr 4fr 1fr 1.5fr;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: ". up-arrow ." ". heading ." ". comment ." "button button button" ". logo ." "copyright copyright copyright"; }
   .contact__button {
@@ -577,22 +583,9 @@
   .up-arrow:hover > .up-arrow__icon {
     animation: blinkingPointerGoBack 2s infinite; }
 
-.contact-heading__primary {
-  color: #fff;
-  font-size: 4rem;
-  font-weight: 700;
-  width: 30rem;
-  justify-self: center;
-  letter-spacing: 1.3rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid white;
-  margin: 3rem;
-  text-align: center;
-  grid-area: heading; }
-
 .contact-heading__secondary {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   grid-area: comment;
   text-align: center; }
