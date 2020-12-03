@@ -5,24 +5,15 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
-}
 
-.profile {
-  filter: grayscale(50%);
-  height: 40rem;
-  width: 40rem;
-  margin: 8rem;
-}
+  &__profile {
+    width: 25rem;
+    margin-bottom: 5rem;
+    filter: brightness(0.7);
+  }
 
-.about-me {
-  margin-top: 2rem;
-  font-size: 2rem;
-  // opacity: 0.6;
-
-  width: 60%;
-}
-
-.testing {
-  font-size: 3rem;
-  color: rgb(167, 167, 167);
+  &__intro {
+    font-size: 2rem;
+    width: 50%;
+  }
 }

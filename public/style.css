@@ -147,21 +147,13 @@
   justify-content: center;
   align-items: center;
   background-color: #fff; }
-
-.profile {
-  filter: grayscale(50%);
-  height: 40rem;
-  width: 40rem;
-  margin: 8rem; }
-
-.about-me {
-  margin-top: 2rem;
-  font-size: 2rem;
-  width: 60%; }
-
-.testing {
-  font-size: 3rem;
-  color: #a7a7a7; }
+  .about__profile {
+    width: 25rem;
+    margin-bottom: 5rem;
+    filter: brightness(0.7); }
+  .about__intro {
+    font-size: 2rem;
+    width: 50%; }
 
 .portfolio {
   height: 100vh;
@@ -314,22 +306,22 @@
   position: relative; }
   .project__caption {
     display: grid;
-    grid-template-columns: 0.8fr 0.5fr 1fr 0.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr 1.5fr;
-    grid-template-areas: ". . . . ." ". description description description ." ". . button . ." ". . . . .";
-    width: 35rem;
+    grid-template-areas: ". . ." "description description description" ". button ." ". . .";
+    width: 30rem;
     height: 30rem;
     background-color: transparent;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
     transition: all 0.5s ease-in-out;
     color: white;
     opacity: 0; }
   .project__cover-image {
-    width: 35rem;
+    width: 30rem;
     height: 30rem;
-    padding: 1rem;
+    padding: 2rem;
     transition: all 0.5s ease-in-out;
     filter: brightness(90%) grayscale(100%); }
   .project__description {
@@ -338,7 +330,7 @@
     flex-direction: column;
     align-items: center; }
   .project__name {
-    letter-spacing: 1rem;
+    letter-spacing: 0.7rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid #fff;
     font-size: 2rem;

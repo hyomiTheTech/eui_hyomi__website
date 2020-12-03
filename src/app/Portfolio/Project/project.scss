@@ -3,19 +3,19 @@
 
   &__caption {
     display: grid;
-    grid-template-columns: 0.8fr 0.5fr 1fr 0.5fr 0.8fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr 1.5fr;
     grid-template-areas:
-      ". . . . ."
-      ". description description description ."
-      ". . button . ."
-      ". . . . .";
-    width: 35rem;
+      ". . ."
+      "description description description"
+      ". button ."
+      ". . .";
+    width: 30rem;
     height: 30rem;
     background-color: transparent;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
 
     transition: all 0.5s ease-in-out;
     color: white;
@@ -23,9 +23,9 @@
   }
 
   &__cover-image {
-    width: 35rem;
+    width: 30rem;
     height: 30rem;
-    padding: 1rem;
+    padding: 2rem;
     transition: all 0.5s ease-in-out;
     filter: brightness(90%) grayscale(100%);
   }
@@ -38,7 +38,7 @@
   }
 
   &__name {
-    letter-spacing: 1rem;
+    letter-spacing: 0.7rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid $color-white;
     font-size: 2rem;
