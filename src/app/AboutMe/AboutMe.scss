@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +9,7 @@
   &__profile {
     width: 25rem;
     margin-bottom: 5rem;
-    filter: brightness(0.7);
+    filter: saturate(0.5) brightness(0.7);
   }
 
   &__intro {

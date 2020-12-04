@@ -7,7 +7,7 @@ const AboutMe = () => {
 
       <img
         className="about__profile"
-        src="./assets/images/picture/profile.jpeg"
+        src="./assets/images/picture/profile.c.jpeg"
         alt="profile"
       />
 

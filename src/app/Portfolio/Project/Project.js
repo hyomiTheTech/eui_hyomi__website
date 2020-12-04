@@ -35,6 +35,7 @@ const ConnectedProject = ({
   return (
     <figure className="project">
       <img className="project__cover-image" alt="project cover" src={imgSrc} />
+      <div className="project__gradient-cover" />
       <figcaption className="project__caption">
         <div className="project__description">
           <h3 className="project__name">&nbsp;{projectName}</h3>

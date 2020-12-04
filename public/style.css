@@ -141,7 +141,7 @@
     opacity: 1 !important; }
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,14 +150,13 @@
   .about__profile {
     width: 25rem;
     margin-bottom: 5rem;
-    filter: brightness(0.7); }
+    filter: saturate(0.5) brightness(0.7); }
   .about__intro {
     font-size: 2rem;
     width: 50%; }
 
 .portfolio {
-  height: 100vh;
-  background-color: #eeeeee;
+  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,7 +165,8 @@
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  width: 80%;
+  margin-bottom: 3rem; }
 
 .heading__secondary {
   font-size: 4rem;
@@ -303,27 +303,34 @@
   background-color: gray; }
 
 .project {
-  position: relative; }
+  position: relative;
+  width: calc(100% / 3 - 4rem);
+  margin: 2rem; }
   .project__caption {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr 1.5fr;
     grid-template-areas: ". . ." "description description description" ". button ." ". . .";
-    width: 30rem;
-    height: 30rem;
-    background-color: transparent;
+    width: 100%;
+    height: 25rem;
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 0;
+    left: 0;
     transition: all 0.5s ease-in-out;
     color: white;
     opacity: 0; }
   .project__cover-image {
-    width: 30rem;
-    height: 30rem;
-    padding: 2rem;
+    width: 100%;
+    height: 25rem;
     transition: all 0.5s ease-in-out;
-    filter: brightness(90%) grayscale(100%); }
+    filter: saturate(0.5); }
+  .project__gradient-cover {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    width: 100%;
+    height: 25rem;
+    top: 0;
+    left: 0; }
   .project__description {
     grid-area: description;
     display: flex;
@@ -587,7 +594,7 @@
   justify-self: center;
   align-self: center;
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   grid-area: copyright; }
   .copyright__name {
     text-decoration: none;
@@ -697,7 +704,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   box-sizing: inherit; }
 
 html {

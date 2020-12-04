@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Project from "./Project";
 
 const projects = [
@@ -10,9 +10,9 @@ const projects = [
       name: "TWIDDLER",
       images: [
         "./assets/images/project-image/twiddler/image 2.png",
-        "./assets/images/project-image/twiddler/image 1.png",
+        "./assets/images/project-image/twiddler/twiddler.png",
         "./assets/images/project-image/twiddler/image 2.png",
-        "./assets/images/project-image/twiddler/image 1.png",
+        "./assets/images/project-image/twiddler/twiddler.png",
       ],
       techStack: "jQuery, HTML, CSS",
       description: `Twiddler is one of the first apps I made since I started coding. The app mimics a Twitter feed and generates random messages from time to time. This app is probably the simplest program I will ever code but the sense of achievement and satisfaction it gave me was the greatest.`,
@@ -46,6 +46,25 @@ const projects = [
       site: null,
       githubSrc: "https://github.com/objectobject-hr/David-service",
     },
+  },
+  {
+    projectName: "SYSTEM DESIGN",
+    imgSrc: "./assets/images/project-image/system-design/system-design.png",
+    shortDescription: "Full Stack Web Application",
+    modalProperties: {
+      name: "SYSTEM DESIGN",
+      images: [
+        "./assets/images/project-image/system-design/image 1.png",
+        "./assets/images/project-image/system-design/image 2.png",
+      ],
+      techStack: "React, Node.js, MongoDB, Nginx, loader.io",
+      description: "David is awesome",
+      site: null,
+      githubSrc: "https://github.com/objectobject-hr/sdc-service-david",
+    },
+  },
+  {
+    imgSrc: "./assets/images/testing.png",
   },
 ];
 
