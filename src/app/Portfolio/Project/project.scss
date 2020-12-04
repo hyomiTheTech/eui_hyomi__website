@@ -3,6 +3,16 @@
   width: calc(100% / 3 - 4rem);
   margin: 2rem;
 
+  @include respond(tab-port) {
+    width: calc(100% / 2 - 8rem);
+    margin: 4rem;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    margin: 5rem 0;
+  }
+
   &__caption {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14,6 +24,10 @@
       ". . .";
     width: 100%;
     height: 25rem;
+
+    @include respond(phone) {
+      height: 35rem;
+    }
 
     position: absolute;
     top: 0;
@@ -29,6 +43,10 @@
     height: 25rem;
     transition: all 0.5s ease-in-out;
     filter: saturate(0.5);
+
+    @include respond(phone) {
+      height: 35rem;
+    }
   }
 
   &__gradient-cover {
@@ -36,12 +54,16 @@
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.2)
     );
     width: 100%;
     height: 25rem;
     top: 0;
     left: 0;
+
+    @include respond(phone) {
+      height: 35rem;
+    }
   }
 
   &__description {
@@ -85,7 +107,7 @@
   }
 
   &:hover &__cover-image {
-    filter: brightness(30%);
+    filter: saturate(1) brightness(30%);
   }
   &:hover &__caption {
     opacity: 1;

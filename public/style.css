@@ -167,6 +167,10 @@
   flex-wrap: wrap;
   width: 80%;
   margin-bottom: 3rem; }
+  @media (max-width: 30em) {
+    .project-container {
+      flex-direction: column;
+      width: 70%; } }
 
 .heading__secondary {
   font-size: 4rem;
@@ -306,6 +310,14 @@
   position: relative;
   width: calc(100% / 3 - 4rem);
   margin: 2rem; }
+  @media (max-width: 48em) {
+    .project {
+      width: calc(100% / 2 - 8rem);
+      margin: 4rem; } }
+  @media (max-width: 30em) {
+    .project {
+      width: 100%;
+      margin: 5rem 0; } }
   .project__caption {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -319,18 +331,27 @@
     transition: all 0.5s ease-in-out;
     color: white;
     opacity: 0; }
+    @media (max-width: 30em) {
+      .project__caption {
+        height: 35rem; } }
   .project__cover-image {
     width: 100%;
     height: 25rem;
     transition: all 0.5s ease-in-out;
     filter: saturate(0.5); }
+    @media (max-width: 30em) {
+      .project__cover-image {
+        height: 35rem; } }
   .project__gradient-cover {
     position: absolute;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     width: 100%;
     height: 25rem;
     top: 0;
     left: 0; }
+    @media (max-width: 30em) {
+      .project__gradient-cover {
+        height: 35rem; } }
   .project__description {
     grid-area: description;
     display: flex;
@@ -362,7 +383,7 @@
     .project__button:hover {
       border: 1px solid white; }
   .project:hover .project__cover-image {
-    filter: brightness(30%); }
+    filter: saturate(1) brightness(30%); }
   .project:hover .project__caption {
     opacity: 1; }
 

@@ -11,6 +11,13 @@
   flex-wrap: wrap;
   width: 80%;
   margin-bottom: 3rem;
+  @include respond(tab-port) {
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    width: 70%;
+  }
 }
 
 .heading__secondary {
