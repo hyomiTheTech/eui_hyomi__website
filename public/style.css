@@ -127,15 +127,17 @@
 
 .logo-container {
   display: flex;
+  width: 25%;
   justify-content: center;
-  grid-area: logo; }
+  grid-area: logo;
+  margin: 0 auto; }
   .logo-container:hover .logo {
     opacity: 0.3;
     transition: 0.5s; }
 
 .logo {
   transition: 0.5s;
-  margin: 0 0.5rem;
+  margin: 0 0.6rem;
   width: 2.5rem; }
   .logo:hover {
     opacity: 1 !important; }
