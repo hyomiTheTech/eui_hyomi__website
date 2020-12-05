@@ -4,12 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5rem;
 }
 
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 85%;
   margin-bottom: 3rem;
   @include respond(tab-port) {
   }

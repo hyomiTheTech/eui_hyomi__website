@@ -5,11 +5,10 @@
   background-size: cover;
   background-position: top;
   display: grid;
-  grid-template-rows: 2fr 3fr 6fr 4fr 1fr 1.5fr;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 6fr 4fr 1fr 1.5fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas:
     ". up-arrow ."
-    ". heading ."
     ". comment ."
     "button button button"
     ". logo ."

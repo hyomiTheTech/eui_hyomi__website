@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const Carousel = ({ images }) => {
   const [counter, setCounter] = useState(1);
-  const [size, setSize] = useState(300);
+  const [size, setSize] = useState(350);
   const image = document.querySelectorAll(".carousel__image");
   const carousel = useRef();
 
@@ -36,7 +36,7 @@ const Carousel = ({ images }) => {
   let mediaQuery = window.matchMedia("(min-width: 768px)");
   useEffect(() => {
     if (mediaQuery.matches) {
-      setSize(300);
+      setSize(350);
     } else {
       setSize(250);
     }
@@ -47,17 +47,17 @@ const Carousel = ({ images }) => {
   }, [counter]);
 
   return (
-    <div>
-      <div className="carousel">
-        <button
-          className="carousel__button--previous"
-          onClick={previousButtonHandler}
-        >
-          <img
-            className="button__icon"
-            src="./assets/images/logos/left-arrow.svg"
-          />
-        </button>
+    <div className="carousel">
+      <button
+        className="carousel__button--previous"
+        onClick={previousButtonHandler}
+      >
+        <img
+          className="button__icon"
+          src="./assets/images/logos/left-arrow.svg"
+        />
+      </button>
+      <div className="carousel__images-container">
         <div
           className="carousel__images"
           onTransitionEnd={transitionEndHandler}
@@ -84,13 +84,13 @@ const Carousel = ({ images }) => {
             );
           })}
         </div>
-        <button className="carousel__button--next" onClick={nextButtonHandler}>
-          <img
-            className="button__icon"
-            src="./assets/images/logos/right-arrow.svg"
-          />
-        </button>
       </div>
+      <button className="carousel__button--next" onClick={nextButtonHandler}>
+        <img
+          className="button__icon"
+          src="./assets/images/logos/right-arrow.svg"
+        />
+      </button>
     </div>
   );
 };

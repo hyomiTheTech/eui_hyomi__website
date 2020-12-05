@@ -21,28 +21,16 @@ const projects = [
     },
   },
   {
-    projectName: "LUCKY PARKING",
-    imgSrc: "./assets/images/project-image/lucky-parking/lucky-parking.png",
-    shortDescription: "Full Stack Map Application",
-    modalProperties: {
-      name: "LUCKY PARKING",
-      images: ["./assets/images/project-image/lucky-parking/image 1.png"],
-      techStack: "React, HTML, CSS",
-      description:
-        "Lucky Parking seeks to educate and inform city planners about the effects of the City of Los Angeles’ parking policies by mapping the 10.5 million parking citations on a webapp that is easy to navigate and provides meaningful analysis to the public.",
-      site: "http://d2d1u2ou05os3m.cloudfront.net/",
-      githubSrc: "https://github.com/hackforla/lucky-parking",
-    },
-  },
-  {
     projectName: "IKEA PAGE",
     imgSrc: "./assets/images/project-image/ikea-page/ikea page cover.png",
     shortDescription: "Full Stack Web Application",
     modalProperties: {
       name: "IKEA PAGE",
       images: ["https://media.giphy.com/media/rjr3gIIPiX4f4wYCLz/giphy.gif"],
-      techStack: "React, HTML, CSS",
-      description: "David is the best Software Engineer in the world!!!",
+      techStack: "React, CSS, MongoDB, Express, Nodejs",
+      description: `Created a clone of IKEA page in a small team under agile environment. 
+      Buildt front-end modules with vanilla Javascript, CSS and React.js. Created unique product data points and stored them into MongoDB and served them with Express server to populate various product details on to the page.
+      And finally created proxy to host components of other team members into one page. `,
       site: null,
       githubSrc: "https://github.com/objectobject-hr/David-service",
     },
@@ -58,14 +46,31 @@ const projects = [
         "./assets/images/project-image/system-design/image 2.png",
       ],
       techStack: "React, Node.js, MongoDB, Nginx, loader.io",
-      description: "David is awesome",
+      description: `Rebuilt, designed and optimized an existing back-end structure of HomeAway.com clone repo.
+      Seeded 30 million unique data points to one SQL(PostgreSQL) and one noSQL(MongoDB) database and stress tested them both to pick a more efficient and robust database. 
+      Created AWS EC2 instances and used NGINX Load Balancer to horizontally scale the system. 
+      Achieved over 4,000 RPS with average latency less than 200ms at a 0% error rate.`,
       site: null,
       githubSrc: "https://github.com/objectobject-hr/sdc-service-david",
     },
   },
   {
-    imgSrc: "./assets/images/testing.png",
+    projectName: "LUCKY PARKING",
+    imgSrc: "./assets/images/project-image/lucky-parking/lucky-parking.png",
+    shortDescription: "Full Stack Map Application",
+    modalProperties: {
+      name: "LUCKY PARKING",
+      images: ["./assets/images/project-image/lucky-parking/image 1.png"],
+      techStack: "React, HTML, CSS",
+      description:
+        "Lucky Parking seeks to educate and inform city planners about the effects of the City of Los Angeles’ parking policies by mapping the 10.5 million parking citations on a webapp that is easy to navigate and provides meaningful analysis to the public.",
+      site: "http://d2d1u2ou05os3m.cloudfront.net/",
+      githubSrc: "https://github.com/hackforla/lucky-parking",
+    },
   },
+  // {
+  //   imgSrc: "./assets/images/testing.png",
+  // },
 ];
 
 const Portfolio = () => {

@@ -1,49 +1,53 @@
 .carousel {
-  width: 300px;
-  overflow: hidden;
-  @include respond(tab-port) {
-    width: 250px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  &__images-container {
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    @include respond(tab-port) {
+      width: 250px;
+      height: 250px;
+    }
   }
 
   &__images {
     display: flex;
-    width: 300px;
-    transform: translateX(-300px);
+    width: 350px;
+    height: 300px;
+    grid-area: picture;
+
+    transform: translateX(-350px);
 
     @include respond(tab-port) {
       width: 250px;
+      height: 250px;
       transform: translateX(-250px);
     }
   }
 
   &__image {
-    width: 300px;
+    width: 350px;
+    height: 300px;
 
     @include respond(tab-port) {
       width: 250px;
+      height: 250px;
     }
   }
 
   &__button--previous {
-    position: absolute;
-    top: 31%;
+    margin-right: 10%;
     z-index: 3;
-    left: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
 
-    @include respond(desktop) {
-      top: 37%;
-    }
-
-    @include respond(tab-port) {
-      top: 31%;
-    }
-
     @include respond(phone) {
-      top: 25%;
+      margin-right: 5%;
     }
 
     &:focus {
@@ -52,25 +56,15 @@
   }
 
   &__button--next {
-    position: absolute;
-    top: 31%;
+    margin-left: 10%;
     z-index: 3;
-    right: 5%;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
 
-    @include respond(desktop) {
-      top: 37%;
-    }
-
-    @include respond(tab-port) {
-      top: 31%;
-    }
-
     @include respond(phone) {
-      top: 25%;
+      margin-left: 5%;
     }
 
     &:focus {
