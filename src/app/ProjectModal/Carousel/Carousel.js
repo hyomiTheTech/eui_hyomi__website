@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect, useRef } from "react";
 
 const Carousel = ({ images }) => {
@@ -55,6 +56,7 @@ const Carousel = ({ images }) => {
         <img
           className="button__icon"
           src="./assets/images/logos/left-arrow.svg"
+          alt="previous-button"
         />
       </button>
       <div className="carousel__images-container">
@@ -77,7 +79,7 @@ const Carousel = ({ images }) => {
               <img
                 className="carousel__image"
                 src={image}
-                alt={`image${i}`}
+                alt={`image-${i}`}
                 key={`${image}${i}`}
                 id={id}
               />
@@ -89,6 +91,7 @@ const Carousel = ({ images }) => {
         <img
           className="button__icon"
           src="./assets/images/logos/right-arrow.svg"
+          alt="next-button"
         />
       </button>
     </div>

@@ -12,19 +12,8 @@
   animation-name: moveInUp;
   animation-duration: 1s;
   animation-timing-function: ease-in;
-
-  @include respond(big-desktop) {
-  }
-
-  @include respond(desktop) {
-  }
-
-  @include respond(tab-land) {
-  }
-
-  @include respond(tab-port) {
-  }
 }
+
 .heading__primary {
   color: $color-white;
   text-transform: uppercase;

@@ -9,16 +9,8 @@ const Navigation = () => {
 
     if (!checked) {
       wrapper.classList.add("blur");
-      //   setTimeout(() => {
-      //     document.body.style.overflow = "hidden";
-      //     document.body.style.paddingRight = "15px";
-      //   }, 150);
     } else {
       wrapper.classList.remove("blur");
-      //   setTimeout(() => {
-      //     document.body.style.paddingRight = "0";
-      //     document.body.style.overflow = "auto";
-      //   }, 180);
     }
 
     let checkbox = document.querySelector(".navigation__checkbox");
