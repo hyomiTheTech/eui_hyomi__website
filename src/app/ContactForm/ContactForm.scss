@@ -55,7 +55,7 @@
   }
 
   &__input {
-    background-color: white;
+    background-color: $color-white;
     border: none;
     height: 3rem;
     width: 30rem;
@@ -74,7 +74,7 @@
   }
 
   &__message {
-    background-color: white;
+    background-color: $color-white;
     border: none;
     height: 20rem;
     width: 30rem;

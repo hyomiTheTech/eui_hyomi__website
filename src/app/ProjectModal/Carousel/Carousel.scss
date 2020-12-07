@@ -43,7 +43,7 @@
     z-index: 3;
     background-color: transparent;
     border: none;
-    color: white;
+    color: $color-white;
     cursor: pointer;
 
     @include respond(phone) {
@@ -60,7 +60,7 @@
     z-index: 3;
     background-color: transparent;
     border: none;
-    color: white;
+    color: $color-white;
     cursor: pointer;
 
     @include respond(phone) {

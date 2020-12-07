@@ -42,8 +42,10 @@ const projects = [
     modalProperties: {
       name: "SYSTEM DESIGN",
       images: [
+        "./assets/images/project-image/system-design/image 2.png",
         "./assets/images/project-image/system-design/image 1.png",
         "./assets/images/project-image/system-design/image 2.png",
+        "./assets/images/project-image/system-design/image 1.png",
       ],
       techStack: "Node.js, MongoDB, Nginx, loader.io",
       description: `Rebuilt, designed and optimized an existing back-end structure of HomeAway.com clone repo.

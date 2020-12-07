@@ -29,7 +29,7 @@ const Contact = () => {
       <h2 className="contact-heading__secondary">
         Have a question or want to work together? <br /> Let's keep in touch
       </h2>
-      <a href="#" className="contact__button" onClick={contactButtonHandler}>
+      <a className="contact__button" onClick={contactButtonHandler}>
         CONTACT ME
       </a>
       <LogoContainer />

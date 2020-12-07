@@ -1,6 +1,6 @@
 .project-modal {
   position: fixed;
-  background: white;
+  background: $color-white;
   width: 60rem;
   height: 70rem;
   top: -100%;
@@ -50,8 +50,6 @@
     font-size: 2rem;
     margin: 1rem;
     color: gray;
-    // align-self: flex-start;
-    // margin-left: 10%;
 
     @include respond(tab-port) {
       font-size: 3rem;
