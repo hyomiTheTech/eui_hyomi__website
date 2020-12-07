@@ -1,7 +1,5 @@
 import React from "react";
 
-import LogoContainer from "./LogoContainer";
-
 function Heading() {
   return (
     <header className="landing-page" id="home">

@@ -27,7 +27,7 @@ const projects = [
     modalProperties: {
       name: "IKEA PAGE",
       images: ["https://media.giphy.com/media/rjr3gIIPiX4f4wYCLz/giphy.gif"],
-      techStack: "React, CSS, MongoDB, Express, Nodejs",
+      techStack: "React, Webpack, CSS, MongoDB, Express, Nodejs",
       description: `Created a clone of IKEA page in a small team under agile environment. 
       Buildt front-end modules with vanilla Javascript, CSS and React.js. Created unique product data points and stored them into MongoDB and served them with Express server to populate various product details on to the page.
       And finally created proxy to host components of other team members into one page. `,
@@ -45,7 +45,7 @@ const projects = [
         "./assets/images/project-image/system-design/image 1.png",
         "./assets/images/project-image/system-design/image 2.png",
       ],
-      techStack: "React, Node.js, MongoDB, Nginx, loader.io",
+      techStack: "Node.js, MongoDB, Nginx, loader.io",
       description: `Rebuilt, designed and optimized an existing back-end structure of HomeAway.com clone repo.
       Seeded 30 million unique data points to one SQL(PostgreSQL) and one noSQL(MongoDB) database and stress tested them both to pick a more efficient and robust database. 
       Created AWS EC2 instances and used NGINX Load Balancer to horizontally scale the system. 
@@ -68,9 +68,20 @@ const projects = [
       githubSrc: "https://github.com/hackforla/lucky-parking",
     },
   },
-  // {
-  //   imgSrc: "./assets/images/testing.png",
-  // },
+  {
+    projectName: "HYOMI-NATOURS",
+    imgSrc: "./assets/images/project-image/hyomi-natours/natours.png",
+    shortDescription: "Web Application",
+    modalProperties: {
+      name: "HYOMI-NATOURS",
+      images: ["https://media.giphy.com/media/2w97JQNazMcUoqiXLJ/giphy.gif"],
+      techStack: "React, SASS",
+      description:
+        "Refactored HTML project I built in an advanced CSS course into React application. Utilized various SASS mixins, variables and nesting to write more reusable and legible CSS codes.",
+      site: "https://hyomithetech.github.io/hyomi-natours/",
+      githubSrc: "https://github.com/hyomiTheTech/hyomi-natours",
+    },
+  },
 ];
 
 const Portfolio = () => {

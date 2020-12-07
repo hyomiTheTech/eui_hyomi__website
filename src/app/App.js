@@ -18,8 +18,8 @@ function App() {
         <main>
           <AboutMe />
           <Portfolio />
-          <Contact />
         </main>
+        <Contact />
       </div>
     </>
   );
