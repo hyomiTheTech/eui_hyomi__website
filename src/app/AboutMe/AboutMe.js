@@ -12,14 +12,16 @@ const AboutMe = () => {
       />
 
       <p className="about__intro">
-        Hi there, my name is David Kim, and I am a Full-Stack web and mobile
-        developer with a passion for building creative software that improves
-        the world through innovative technologies.
+        Hi there, my name is David Kim, and I am a software engineer with a
+        passion for building creative software that enriches our lives. I have
+        done work in building full-stack web and mobile application under
+        various group environments.
         <br />
-        <br />I feel genuine excitement when solving problems and helping others
-        find creative solutions. Programming has been such a wonderful source of
-        excitement for these reasons, and I cannot wait for the future
-        challenges and collaborations ahead!
+        <br />I am also a tech enthusiast, and am interested in all innovative
+        technologies that improve the world but mainly programming, blockchain,
+        and cybersecurity. The greatest joy of my life is exploring how the
+        world is becoming a better place to live through technological
+        advancement, and I am so excited to be a part of it.
       </p>
     </section>
   );
