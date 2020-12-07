@@ -45,7 +45,7 @@ const Carousel = ({ images }) => {
 
   useEffect(() => {
     carousel.current.style.transform = `translateX(${-size * counter}px)`;
-  }, [counter]);
+  }, [counter, size]);
 
   return (
     <div className="carousel">
