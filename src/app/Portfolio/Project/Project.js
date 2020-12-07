@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { connect } from "react-redux";
 import { getProjectProperties } from "../../../redux/action";
@@ -42,9 +41,9 @@ const ConnectedProject = ({
           <h3 className="project__name">&nbsp;{projectName}</h3>
           <h5 className="project__tech">{shortDescription}</h5>
         </div>
-        <a href="#" className="project__button" onClick={exploreClickHandler}>
+        <button className="project__button" onClick={exploreClickHandler}>
           EXPLORE
-        </a>
+        </button>
       </figcaption>
     </figure>
   );

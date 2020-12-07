@@ -100,6 +100,8 @@
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
     font-size: 1.5rem;
+    outline: none;
+    font-family: inherit;
 
     &:hover {
       border: 1px solid rgb(185, 185, 185);

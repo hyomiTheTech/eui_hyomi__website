@@ -381,7 +381,9 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    outline: none;
+    font-family: inherit; }
     .project__button:hover {
       border: 1px solid #b9b9b9; }
   .project:hover .project__cover-image {
