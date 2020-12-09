@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 const ContactForm = () => {
   const closeButtonHandler = () => {
     let contactForm = document.querySelector(".contact-modal");
-    contactForm.style.bottom = "-200%";
+    contactForm.style.bottom = "-250%";
     contactForm.style.top = null;
 
     const wrapper = document.querySelector("#page-wrapper");

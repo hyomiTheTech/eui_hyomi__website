@@ -25,7 +25,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 12rem 11rem;
+  padding: 8% 7%;
+
+  @include respond(phone) {
+    padding: 20% 10%;
+  }
 
   animation-name: moveInDown;
   animation-duration: 2s;

@@ -29,20 +29,18 @@
     letter-spacing: 1.3rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid black;
-    margin-top: 1.5rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     text-align: center;
 
     @include respond(tab-port) {
       font-size: 5rem;
       letter-spacing: 2rem;
-      margin: 2rem 0;
     }
 
     @include respond(phone) {
       font-size: 6rem;
       letter-spacing: 2rem;
-      margin: 8rem 0 3rem 0;
       width: 80%;
     }
   }
@@ -106,7 +104,8 @@
 .anchor-tag-container {
   display: flex;
   justify-self: end;
-  width: 60%;
+  width: 70%;
+  height: 20%;
   justify-content: space-around;
   margin: 3rem;
   @include respond(phone) {
@@ -127,14 +126,14 @@
   text-decoration: none;
 
   @include respond(tab-port) {
-    width: 15rem;
+    width: 30%;
     font-size: 3rem;
     padding: 2rem;
   }
 
   @include respond(phone) {
-    width: 18rem;
+    width: 30%;
     font-size: 3rem;
-    padding: 2.5rem;
+    padding: 2rem;
   }
 }

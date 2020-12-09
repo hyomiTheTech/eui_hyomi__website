@@ -7,27 +7,16 @@
     height: 5rem;
     width: 5rem;
     position: fixed;
-    right: 2.5rem;
-    top: 2rem;
+    right: 2%;
+    top: 2%;
     border-radius: 50%;
     z-index: 3;
     text-align: center;
     cursor: pointer;
     animation: logoStart 5s;
 
-    @include respond(tab-land) {
-      top: 3rem;
-      right: 4rem;
-    }
-
-    @include respond(tab-port) {
-      top: 5rem;
-      right: 5rem;
-    }
-
     @include respond(phone) {
-      top: 4rem;
-      right: 5.5rem;
+      right: 8%;
     }
   }
 
@@ -98,18 +87,10 @@
     &,
     &::before,
     &::after {
-      width: 3.5rem;
+      width: 35px;
       height: 2px;
       background-color: gray;
       display: inline-block;
-
-      @include respond(tab-port) {
-        width: 5.5rem;
-      }
-
-      @include respond(phone) {
-        width: 6rem;
-      }
     }
 
     &::before,
@@ -121,35 +102,19 @@
     }
 
     &::before {
-      top: -1rem;
-
-      @include respond(tab-port) {
-        top: -2rem;
-      }
-
-      @include respond(phone) {
-        top: -2rem;
-      }
+      top: -12px;
     }
     &::after {
-      top: 1rem;
-
-      @include respond(tab-port) {
-        top: 2rem;
-      }
-
-      @include respond(phone) {
-        top: 2rem;
-      }
+      top: 12px;
     }
   }
 
   &__button:hover &__icon::before {
-    top: -1.3rem;
+    top: -15px;
   }
 
   &__button:hover &__icon::after {
-    top: 1.3rem;
+    top: 15px;
   }
 
   &__checkbox:checked + &__button &__icon {
