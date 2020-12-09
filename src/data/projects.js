@@ -7,9 +7,9 @@ const projects = [
       name: "TWIDDLER",
       images: [
         "./assets/images/project-image/twiddler/image 2.png",
-        "./assets/images/project-image/twiddler/twiddler.png",
-        "./assets/images/project-image/twiddler/image 2.png",
-        "./assets/images/project-image/twiddler/twiddler.png",
+        // "./assets/images/project-image/twiddler/twiddler.png",
+        // "./assets/images/project-image/twiddler/image 2.png",
+        // "./assets/images/project-image/twiddler/twiddler.png",
       ],
       techStack: "jQuery, HTML, CSS, Heroku",
       description: `Twiddler is one of the first apps I made since I started coding. The app mimics a Twitter feed and generates random messages from time to time. This app is probably the simplest program I will ever code but the sense of achievement and satisfaction it gave me was the greatest.`,
@@ -39,10 +39,10 @@ const projects = [
     modalProperties: {
       name: "SYSTEM DESIGN",
       images: [
-        "./assets/images/project-image/system-design/image 2.png",
+        // "./assets/images/project-image/system-design/image 2.png",
         "./assets/images/project-image/system-design/image 1.png",
-        "./assets/images/project-image/system-design/image 2.png",
-        "./assets/images/project-image/system-design/image 1.png",
+        // "./assets/images/project-image/system-design/image 2.png",
+        // "./assets/images/project-image/system-design/image 1.png",
       ],
       techStack: "Node.js, PostgreSQL, MongoDB, Nginx, Loader.io, AWS",
       description: `Rebuilt, designed and optimized an existing back-end structure of HomeAway.com clone repo.
@@ -61,10 +61,10 @@ const projects = [
       name: "TOURVIEWAR",
       images: [
         "./assets/images/project-image/tourviewar/image 2.png",
-        "./assets/images/project-image/tourviewar/tourviewar.png",
-        "./assets/images/project-image/tourviewar/image 1.png",
-        "./assets/images/project-image/tourviewar/image 2.png",
-        "./assets/images/project-image/tourviewar/tourviewar.png",
+        // "./assets/images/project-image/tourviewar/tourviewar.png",
+        // "./assets/images/project-image/tourviewar/image 1.png",
+        // "./assets/images/project-image/tourviewar/image 2.png",
+        // "./assets/images/project-image/tourviewar/tourviewar.png",
       ],
       techStack: "React-Native, ViroReact, Express.js, PostgreSQL, AWS",
       description: `Worked in a small team and created a mobile application that lets users to create and experience 360 degree augmented reality spaces. The users are allowed to create account, take or upload a picture, create text/object in the AR spaces, as well as visit AR spaces created by others.`,
