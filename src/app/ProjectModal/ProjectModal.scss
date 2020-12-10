@@ -29,7 +29,7 @@
     letter-spacing: 1.3rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid black;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     text-align: center;
 
@@ -79,25 +79,24 @@
 
 .close-button {
   position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
+  right: 3%;
+  top: 3%;
 
   @include respond(phone) {
-    right: 5rem;
-    top: 4rem;
+    right: 5%;
   }
 
   &__icon {
     cursor: pointer;
-    width: 2.5rem;
+    width: 20px;
 
-    @include respond(tab-port) {
-      width: 3.5rem;
-    }
+    // @include respond(tab-port) {
+    //   width: 3.5rem;
+    // }
 
-    @include respond(phone) {
-      width: 4rem;
-    }
+    // @include respond(phone) {
+    //   width: 4rem;
+    // }
   }
 }
 

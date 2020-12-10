@@ -398,7 +398,7 @@
     letter-spacing: 1.3rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid black;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     text-align: center; }
     @media (max-width: 48em) {
@@ -434,21 +434,14 @@
 
 .close-button {
   position: absolute;
-  right: 1.5rem;
-  top: 1.5rem; }
+  right: 3%;
+  top: 3%; }
   @media (max-width: 30em) {
     .close-button {
-      right: 5rem;
-      top: 4rem; } }
+      right: 5%; } }
   .close-button__icon {
     cursor: pointer;
-    width: 2.5rem; }
-    @media (max-width: 48em) {
-      .close-button__icon {
-        width: 3.5rem; } }
-    @media (max-width: 30em) {
-      .close-button__icon {
-        width: 4rem; } }
+    width: 20px; }
 
 .anchor-tag-container {
   display: flex;
