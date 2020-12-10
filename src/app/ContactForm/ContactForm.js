@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
-  const closeButtonHandler = () => {
+  const [isSubmit, setIsSubmit] = useState(null);
+
+  const handleModalClose = () => {
     let contactForm = document.querySelector(".contact-modal");
     contactForm.style.bottom = "-250%";
     contactForm.style.top = null;
@@ -28,10 +30,17 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          if (result) {
+            setIsSubmit(true);
+            setTimeout(() => {
+              handleModalClose();
+            }, 2000);
+          }
         },
         (error) => {
-          console.log(error.text);
+          if (error) {
+            setIsSubmit(false);
+          }
         }
       );
 
@@ -39,48 +48,64 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-modal">
-      <label className="close-button" onClick={closeButtonHandler}>
-        <img
-          className="close-button__icon"
-          src="./assets/images/logos/delete.svg"
-          alt="close-button"
-        />
-      </label>
-      <h1 className="contact-modal__heading">CONTACT</h1>
-      <form className="contact-form" onSubmit={sendEmail}>
-        <input
-          className="contact-form__input"
-          type="text"
-          name="name"
-          placeholder="Full name"
-        />
-        <input
-          className="contact-form__input"
-          type="text"
-          name="email"
-          placeholder="Your e-mail"
-        />
-        <input
-          className="contact-form__input"
-          type="text"
-          name="subject"
-          placeholder="Subject"
-        />
-        <textarea
-          className="contact-form__message"
-          name="message"
-          placeholder="Message"
-        ></textarea>
-        <button
-          className="contact-form__submit-button"
-          type="submit"
-          name="submit"
-        >
-          SUBMIT
-        </button>
-      </form>
-    </div>
+    <>
+      <div className="contact-modal">
+        <label className="close-button" onClick={handleModalClose}>
+          <img
+            className="close-button__icon"
+            src="./assets/images/logos/delete.svg"
+            alt="close-button"
+          />
+        </label>
+        <h1 className="contact-modal__heading">CONTACT</h1>
+        <form className="contact-form" onSubmit={sendEmail}>
+          <input
+            className="contact-form__input"
+            type="text"
+            name="name"
+            placeholder="Full name"
+            required
+          />
+          <input
+            className="contact-form__input"
+            type="email"
+            name="email"
+            placeholder="Your e-mail"
+            required
+          />
+          <input
+            className="contact-form__input"
+            type="text"
+            name="subject"
+            placeholder="Subject"
+          />
+          <textarea
+            className="contact-form__message"
+            name="message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <div className="submit-alert">
+            {isSubmit === null ? null : isSubmit === true ? (
+              <p className="submit-alert__message--success">
+                Message submitted. Thanks!
+              </p>
+            ) : (
+              <p className="submit-alert__message--fail">
+                Message didn't submitted. Please try again!
+              </p>
+            )}
+          </div>
+          <button
+            className="contact-form__submit-button"
+            type="submit"
+            name="submit"
+          >
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

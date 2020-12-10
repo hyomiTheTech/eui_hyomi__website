@@ -595,7 +595,7 @@
 .contact-modal {
   position: fixed;
   background: #f3f3f3;
-  width: 50rem;
+  width: 45rem;
   height: 60rem;
   top: 250%;
   left: 50%;
@@ -607,7 +607,7 @@
   justify-content: flex-start; }
   @media (max-width: 48em) {
     .contact-modal {
-      width: 70rem;
+      width: 60rem;
       height: 80rem; } }
   @media (max-width: 30em) {
     .contact-modal {
@@ -633,7 +633,8 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 65%; }
   @media (max-width: 30em) {
     .contact-form {
       width: 80%;
@@ -642,33 +643,29 @@
     background-color: #fff;
     border: none;
     height: 3rem;
-    width: 30rem;
+    width: 100%;
     margin: 0.5rem; }
     @media (max-width: 48em) {
       .contact-form__input {
-        width: 40rem;
         height: 4rem; } }
     @media (max-width: 30em) {
       .contact-form__input {
         height: 6rem;
-        width: 90%;
         margin: 1.5rem; } }
   .contact-form__message {
     background-color: #fff;
     border: none;
     height: 20rem;
-    width: 30rem;
-    margin: 0.5rem;
+    width: 100%;
+    margin: 0.5rem 0.5rem 0 0.5rem;
     resize: none; }
     @media (max-width: 48em) {
       .contact-form__message {
-        width: 40rem;
         height: 30rem; } }
     @media (max-width: 30em) {
       .contact-form__message {
         height: 60%;
-        width: 90%;
-        margin: 1.5rem; } }
+        margin: 1.5rem 1.5rem 0 1.5rem; } }
   .contact-form__submit-button {
     width: 12rem;
     height: 4rem;
@@ -692,6 +689,22 @@
         width: 25rem;
         height: 9rem;
         font-size: 3rem; } }
+
+.submit-alert {
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center; }
+  @media (max-width: 48em) {
+    .submit-alert {
+      font-size: 2rem; } }
+  @media (max-width: 30em) {
+    .submit-alert {
+      font-size: 2.5rem; } }
+  .submit-alert__message--success {
+    background-color: #16c49b8a; }
+  .submit-alert__message--fail {
+    background-color: #ea173786; }
 
 * {
   margin: 0;
