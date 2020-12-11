@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
   const [checked, isChecked] = useState(false);
@@ -34,39 +35,52 @@ const Navigation = () => {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="#" className="navigation__link" onClick={CheckboxHandler}>
+            <Link
+              className="navigation__link"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onClick={CheckboxHandler}
+            >
               HOME
-            </a>
+            </Link>
           </li>
           <li className="navigation__item">
-            <a
-              href="#about"
+            <Link
               className="navigation__link"
-              htmlFor="navi-toggle"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={1000}
               onClick={CheckboxHandler}
             >
               ABOUT
-            </a>
+            </Link>
           </li>
           <li className="navigation__item">
-            <a
-              href="#portfolio"
+            <Link
               className="navigation__link"
-              htmlFor="navi-toggle"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={1000}
               onClick={CheckboxHandler}
             >
               PORTFOLIO
-            </a>
+            </Link>
           </li>
           <li className="navigation__item">
-            <a
-              href="#contact"
+            <Link
               className="navigation__link"
-              htmlFor="navi-toggle"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1000}
               onClick={CheckboxHandler}
             >
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

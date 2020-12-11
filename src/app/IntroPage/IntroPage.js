@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Heading() {
   return (
@@ -8,9 +9,15 @@ function Heading() {
         <span className="heading__primary-sub">SOFTWARE ENGINEER</span>
       </div>
       <div className="start-button">
-        <a href="#about" className="start-button__label">
+        <Link
+          className="start-button__label"
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           &nbsp;START
-        </a>
+        </Link>
 
         <img
           className="start-button__icon"
