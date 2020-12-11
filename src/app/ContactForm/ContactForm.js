@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
@@ -18,15 +18,21 @@ const ContactForm = () => {
     navButton.style.zIndex = 3;
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSubmit(null);
+    }, 3000);
+  }, [isSubmit]);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_06mpapf",
-        "template_g78qmam",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         e.target,
-        "user_PIkdZ66k8v1fagtt0eJbP"
+        process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then(
         (result) => {
