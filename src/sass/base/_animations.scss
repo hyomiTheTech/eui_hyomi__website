@@ -1,14 +1,14 @@
 @keyframes moveInDown {
   0% {
     opacity: 0;
-    transform: translateY(-50x);
-  }
-
-  50% {
-    opacity: 0;
   }
 
   70% {
+    opacity: 0;
+    transform: translateY(-50x);
+  }
+
+  80% {
     opacity: 0.4;
     transform: translateY(20px);
   }
@@ -22,10 +22,14 @@
 @keyframes moveInUp {
   0% {
     opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
     transform: translateY(50x);
   }
 
-  80% {
+  90% {
     transform: translateY(-30px);
   }
 
@@ -66,15 +70,15 @@
 }
 
 @keyframes logoStart {
-  from {
+  0% {
     opacity: 0;
   }
 
-  50% {
+  70% {
     opacity: 0;
   }
 
-  to {
+  100% {
     opacity: 1;
   }
 }

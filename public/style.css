@@ -1,10 +1,10 @@
 @keyframes moveInDown {
   0% {
-    opacity: 0;
-    transform: translateY(-50x); }
-  50% {
     opacity: 0; }
   70% {
+    opacity: 0;
+    transform: translateY(-50x); }
+  80% {
     opacity: 0.4;
     transform: translateY(20px); }
   100% {
@@ -13,9 +13,11 @@
 
 @keyframes moveInUp {
   0% {
+    opacity: 0; }
+  50% {
     opacity: 0;
     transform: translateY(50x); }
-  80% {
+  90% {
     transform: translateY(-30px); }
   100% {
     opacity: 1;
@@ -44,16 +46,16 @@
     opacity: 1; } }
 
 @keyframes logoStart {
-  from {
+  0% {
     opacity: 0; }
-  50% {
+  70% {
     opacity: 0; }
-  to {
+  100% {
     opacity: 1; } }
 
 .landing-page {
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.png");
   background-size: cover;
   background-position: top;
   display: flex;
@@ -61,7 +63,7 @@
   align-items: center;
   justify-content: center;
   animation-name: moveInUp;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in; }
 
 .heading__primary {
@@ -76,7 +78,7 @@
   text-align: center;
   padding: 8% 7%;
   animation-name: moveInDown;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: ease-in; }
   @media (max-width: 30em) {
     .heading__primary {
@@ -108,7 +110,7 @@
     letter-spacing: 0.5rem;
     justify-self: center;
     cursor: pointer;
-    animation: logoStart 4s;
+    animation: logoStart 4.5s;
     animation-direction: normal;
     text-decoration: none; }
   .start-button__icon {
@@ -415,7 +417,8 @@
     font-size: 2rem;
     margin: 1rem;
     color: gray;
-    justify-self: flex-start; }
+    justify-self: flex-start;
+    width: 80%; }
     @media (max-width: 48em) {
       .project-modal__tech-stack {
         font-size: 3rem; } }
@@ -539,7 +542,7 @@
 
 .contact {
   height: 50rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), fixed url("./assets/images/mainImage.png");
   background-size: cover;
   background-position: top;
   display: grid;

@@ -50,6 +50,7 @@
     margin: 1rem;
     color: gray;
     justify-self: flex-start;
+    width: 80%;
 
     @include respond(tab-port) {
       font-size: 3rem;

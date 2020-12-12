@@ -1,7 +1,7 @@
 .landing-page {
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    fixed url("./assets/images/mainImage.jpg");
+    fixed url("./assets/images/mainImage.png");
   background-size: cover;
   background-position: top;
   display: flex;
@@ -10,7 +10,7 @@
   justify-content: center;
 
   animation-name: moveInUp;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in;
 }
 
@@ -32,7 +32,7 @@
   }
 
   animation-name: moveInDown;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: ease-in;
 
   &-main {
@@ -69,7 +69,7 @@
 
     justify-self: center;
     cursor: pointer;
-    animation: logoStart 4s;
+    animation: logoStart 4.5s;
     animation-direction: normal;
     text-decoration: none;
   }
