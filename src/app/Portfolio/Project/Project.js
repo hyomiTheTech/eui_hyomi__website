@@ -33,7 +33,13 @@ const ConnectedProject = ({
     navButton.style.zIndex = -1;
   };
   return (
-    <figure className="project">
+    <figure
+      className="project"
+      data-aos="fade-down"
+      data-aos-offset="100"
+      data-aos-duration="1000"
+      data-aos-once
+    >
       <img className="project__cover-image" alt="project cover" src={imgSrc} />
       <div className="project__gradient-cover" />
       <figcaption className="project__caption">
