@@ -11,8 +11,10 @@ function App() {
   return (
     <>
       <Navigation />
-      <ProjectModal />
-      <ContactForm />
+      <div id="modal-overlay">
+        <ProjectModal />
+        <ContactForm />
+      </div>
       <div id="page-wrapper">
         <IntroPage />
         <main>

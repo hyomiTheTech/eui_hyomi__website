@@ -8,7 +8,7 @@ const Contact = () => {
     const contactForm = document.querySelector(".contact-modal");
 
     contactForm.style.top = "50%";
-    contactForm.style.zIndex = 2;
+    contactForm.style.zIndex = 3;
 
     const wrapper = document.getElementById("page-wrapper");
     wrapper.classList.add("blur");
@@ -17,6 +17,13 @@ const Contact = () => {
     navIcon.style.display = "none";
     const navButton = document.getElementsByClassName("navigation__button")[0];
     navButton.style.zIndex = -1;
+
+    const overlay = document.querySelector("#modal-overlay");
+    overlay.style.zIndex = 2;
+
+    setTimeout(() => {
+      document.body.style.overflowY = "hidden";
+    }, 500);
   };
 
   return (

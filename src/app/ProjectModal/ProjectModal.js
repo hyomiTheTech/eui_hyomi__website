@@ -29,6 +29,13 @@ const ConnectedProjectModal = ({ projectProperties }) => {
 
     const navButton = document.getElementsByClassName("navigation__button")[0];
     navButton.style.zIndex = 3;
+
+    const overlay = document.querySelector("#modal-overlay");
+    overlay.style.zIndex = -1;
+
+    setTimeout(() => {
+      document.body.style.overflowY = "visible";
+    }, 400);
   };
 
   return (

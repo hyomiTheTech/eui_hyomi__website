@@ -20,7 +20,7 @@ const ConnectedProject = ({
   const exploreClickHandler = () => {
     let modal = document.getElementsByClassName("project-modal")[0];
     modal.style.top = "50%";
-    modal.style.zIndex = 2;
+    modal.style.zIndex = 3;
 
     getProjectProperties(modalProperties);
 
@@ -31,12 +31,20 @@ const ConnectedProject = ({
     navIcon.style.display = "none";
     const navButton = document.getElementsByClassName("navigation__button")[0];
     navButton.style.zIndex = -1;
+
+    const overlay = document.querySelector("#modal-overlay");
+    overlay.style.zIndex = 2;
+
+    setTimeout(() => {
+      document.body.style.overflowY = "hidden";
+    }, 500);
   };
+
   return (
     <figure
       className="project"
       data-aos="fade-down"
-      data-aos-offset="100"
+      data-aos-offset="200"
       data-aos-duration="1000"
       data-aos-once
     >
