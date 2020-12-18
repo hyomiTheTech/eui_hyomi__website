@@ -21,9 +21,9 @@ const Contact = () => {
     const overlay = document.querySelector("#modal-overlay");
     overlay.style.zIndex = 2;
 
-    setTimeout(() => {
-      document.body.style.overflowY = "hidden";
-    }, 500);
+    // setTimeout(() => {
+    //   document.body.style.overflowY = "hidden";
+    // }, 500);
   };
 
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
         to="home"
         spy={true}
         smooth={true}
-        duration={1000}
+        duration={500}
       >
         <img
           className="up-arrow__icon"

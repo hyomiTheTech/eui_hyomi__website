@@ -20,9 +20,9 @@ const ContactForm = () => {
     const overlay = document.querySelector("#modal-overlay");
     overlay.style.zIndex = -1;
 
-    setTimeout(() => {
-      document.body.style.overflowY = "visible";
-    }, 400);
+    // setTimeout(() => {
+    //   document.body.style.overflowY = "visible";
+    // }, 400);
   };
 
   useEffect(() => {

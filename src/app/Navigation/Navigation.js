@@ -36,11 +36,13 @@ const Navigation = () => {
         <ul className="navigation__list">
           <li className="navigation__item">
             <Link
+              // activeClass="active"
               className="navigation__link"
               to="home"
               spy={true}
               smooth={true}
-              duration={1000}
+              duration={500}
+              delay={600}
               onClick={CheckboxHandler}
             >
               HOME
@@ -52,7 +54,8 @@ const Navigation = () => {
               to="about"
               spy={true}
               smooth={true}
-              duration={1000}
+              duration={500}
+              delay={600}
               onClick={CheckboxHandler}
             >
               ABOUT
@@ -64,7 +67,8 @@ const Navigation = () => {
               to="portfolio"
               spy={true}
               smooth={true}
-              duration={1000}
+              duration={500}
+              delay={600}
               onClick={CheckboxHandler}
             >
               PORTFOLIO
@@ -76,7 +80,8 @@ const Navigation = () => {
               to="contact"
               spy={true}
               smooth={true}
-              duration={1000}
+              duration={500}
+              delay={600}
               onClick={CheckboxHandler}
             >
               CONTACT

@@ -35,7 +35,7 @@ const ConnectedProjectModal = ({ projectProperties }) => {
 
     setTimeout(() => {
       document.body.style.overflowY = "visible";
-    }, 400);
+    }, 300);
   };
 
   return (
