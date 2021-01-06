@@ -165,8 +165,14 @@
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  width: 85%;
+  width: 1000px;
   margin-bottom: 3rem; }
+  @media (max-width: 75em) {
+    .project-container {
+      width: 700px; } }
+  @media (max-width: 48em) {
+    .project-container {
+      width: 500px; } }
   @media (max-width: 30em) {
     .project-container {
       flex-direction: column;

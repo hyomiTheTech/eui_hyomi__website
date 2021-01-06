@@ -10,9 +10,15 @@
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  width: 85%;
+  width: 1000px;
   margin-bottom: 3rem;
+
+  @include respond(desktop) {
+    width: 700px;
+  }
+
   @include respond(tab-port) {
+    width: 500px;
   }
 
   @include respond(phone) {
