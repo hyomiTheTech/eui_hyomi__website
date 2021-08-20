@@ -100,6 +100,21 @@ const projects = [
       site: "http://d2d1u2ou05os3m.cloudfront.net/",
       githubSrc: "https://github.com/hackforla/lucky-parking",
     },
+    
+  },
+  {
+    projectName: "CRYPTO PRICE ALARM",
+    imgSrc: "./assets/images/project-image/crypto-price-alarm/crypto-price-alarm.png",
+    shortDescription: "Mobile Application",
+    modalProperties: {
+      name: "CRYPTO PRICE ALARM",
+      images: ["./assets/images/project-image/crypto-price-alarm/crypto-price-alarm.png"],
+      techStack: "React Native, Deep Link, Async Storage",
+      description: "Crypto Price Alarm is a simple mobile app that triggers alarm when a crypto price reach a set up price level. Stored alarm data persistently in the app utilizing AsyncStorage. Created background fetch tasks to periodically fetch price API in the background of the app. Utilized deep linking technique and navigation module to open the app when alarm triggered.",
+      site: null,
+      githubSrc: "https://github.com/hyomiTheTech/crypto_alarm",
+    },
+    
   },
 ];
 
