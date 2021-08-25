@@ -33,10 +33,10 @@ const AboutMe = () => {
         passion for building creative software that enriches our lives. I have
         done work in building full-stack web and mobile applications utilizing
         javascript based libraries and frameworks. I am also a tech enthusiast,
-        and am interested in all innovative technologies that improve the world
-        but mainly programming and blockchain. The greatest joy of my life is
-        exploring how the world is becoming a better place to live through
-        technological advancement, and I am so excited to be a part of it.
+        and am interested in all innovative technologies that improve the world.
+        The greatest joy of my life is exploring how the world is becoming a
+        better place to live through technological advancement, and I am so
+        excited to be a part of it.
       </p>
     </section>
   );

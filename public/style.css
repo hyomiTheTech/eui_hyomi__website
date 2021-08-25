@@ -154,6 +154,15 @@
     font-size: 1.5rem;
     width: 50%; }
 
+.experiences {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff; }
+  .experiences__list {
+    display: flex;
+    justify-content: center; }
+
 .portfolio {
   background-color: #f8f8f8;
   display: flex;

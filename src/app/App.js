@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio";
 import ProjectModal from "./ProjectModal";
 import Contact from "./Contact";
 import ContactForm from "./ContactForm/ContactForm";
+import Experiences from "./Experiences/Experiences";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <IntroPage />
         <main>
           <AboutMe />
+          <Experiences />
           <Portfolio />
         </main>
         <Contact />

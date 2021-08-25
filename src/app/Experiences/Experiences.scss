@@ -1,0 +1,11 @@
+.experiences {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: $color-white;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+}
