@@ -1,11 +1,13 @@
 @import "sass/base/animations";
 @import "sass/abstracts/variables";
 @import "sass/abstracts/mixins";
+@import "sass/base/fonts";
 
 @import "app/IntroPage/IntroPage";
 @import "app/IntroPage/LogoContainer/LogoContainer";
 @import "app/AboutMe/AboutMe";
 @import "app/Experiences/Experiences";
+@import "app/Experiences/Experience/Experience.scss";
 @import "app/Portfolio/Portfolio";
 @import "app/Navigation/Navigation";
 @import "app/Portfolio/Project/Project";

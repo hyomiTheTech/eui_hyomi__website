@@ -64,6 +64,19 @@ const Navigation = () => {
           <li className="navigation__item">
             <Link
               className="navigation__link"
+              to="experiences"
+              spy={true}
+              smooth={true}
+              duration={500}
+              delay={600}
+              onClick={CheckboxHandler}
+            >
+              EXPERIENCES
+            </Link>
+          </li>
+          <li className="navigation__item">
+            <Link
+              className="navigation__link"
               to="portfolio"
               spy={true}
               smooth={true}

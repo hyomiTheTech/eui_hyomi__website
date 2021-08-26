@@ -1,0 +1,12 @@
+.heading__secondary {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  margin: 2rem;
+
+  @include respond(tab-port) {
+    font-size: 4.5rem;
+  }
+}

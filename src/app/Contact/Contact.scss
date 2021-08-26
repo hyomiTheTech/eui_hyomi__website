@@ -29,6 +29,12 @@
     font-size: 1.5rem;
     grid-area: button;
 
+    @include respond(tab-port) {
+      width: 20rem;
+      height: 7rem;
+      font-size: 2rem;
+    }
+
     @include respond(phone) {
       width: 25rem;
       height: 10rem;
