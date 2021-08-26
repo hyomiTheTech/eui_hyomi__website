@@ -13,7 +13,7 @@
     z-index: 3;
     text-align: center;
     cursor: pointer;
-    animation: logoStart 5s;
+    animation: logoStart 4s;
 
     @include respond(phone) {
       right: 8%;

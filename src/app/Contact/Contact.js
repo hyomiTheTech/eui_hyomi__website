@@ -42,10 +42,23 @@ const Contact = () => {
         />
       </Link>
 
-      <h2 className="contact-heading__secondary">
+      <h2
+        className="contact-heading__secondary"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="1200"
+        data-aos-once
+      >
         Have a question or want to work together? <br /> Let's keep in touch
       </h2>
-      <a className="contact__button" onClick={contactButtonHandler}>
+      <a
+        className="contact__button"
+        onClick={contactButtonHandler}
+        data-aos="fade-down"
+        data-aos-offset="100"
+        data-aos-duration="1200"
+        data-aos-once
+      >
         CONTACT ME
       </a>
       <LogoContainer />

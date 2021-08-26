@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
   animation-name: moveInUp;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in; }
 
 .heading__primary {
@@ -89,7 +89,7 @@
   text-align: center;
   padding: 8% 7%;
   animation-name: moveInDown;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-timing-function: ease-in; }
   @media (max-width: 30em) {
     .heading__primary {
@@ -121,7 +121,7 @@
     letter-spacing: 0.5rem;
     justify-self: center;
     cursor: pointer;
-    animation: logoStart 4.5s;
+    animation: logoStart 3.5s;
     animation-direction: normal;
     text-decoration: none; }
   .start-button__icon {
@@ -294,7 +294,7 @@
   z-index: 3;
   text-align: center;
   cursor: pointer;
-  animation: logoStart 5s; }
+  animation: logoStart 4s; }
   @media (max-width: 30em) {
     .navigation__button {
       right: 8%; } }
