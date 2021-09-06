@@ -1,11 +1,11 @@
 const EXPERIENCE_DATA = [
   {
     index: 1,
-    employer: "LV L33t Coders (Tech Meetup Group)",
+    employer: "Vegas Tech Guild (Tech Community)",
     date: "Jul 2021 - Current",
     position: "Organizer/Founder",
     description:
-      "LV L33t Coders is a tech meetup group I organized to create vibrant tech community in Las Vegas and collaborate to create exciting applications. Currently, we have over 30 members, and we are continuing our discussions on creating applications utilizing latest technologies for the people and non-profit organizations in Las Vegas.",
+      "Vegas Tech Guild is a tech meetup group I organized to create vibrant tech community in Las Vegas and collaborate to create exciting applications. Currently, we have over 30 members, and we are continuing our discussions on creating applications utilizing latest technologies for the people and non-profit organizations in Las Vegas.",
   },
   {
     index: 2,
