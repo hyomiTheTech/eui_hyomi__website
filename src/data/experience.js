@@ -5,7 +5,7 @@ const EXPERIENCE_DATA = [
     date: "Jul 2021 - Current",
     position: "Organizer/Founder",
     description:
-      "Vegas Tech Guild is a tech meetup group I organized to create vibrant tech community in Las Vegas and collaborate to create exciting applications. Currently, we have over 30 members, and we are continuing our discussions on creating applications utilizing latest technologies for the people and non-profit organizations in Las Vegas.",
+      "Vegas Tech Guild is a tech meetup group I organized to create vibrant tech community in Las Vegas and collaborate to create exciting applications. Currently, we have over 50 members, and we are continuing our discussions on creating applications utilizing latest technologies for the people and non-profit organizations in Las Vegas.",
   },
   {
     index: 2,
