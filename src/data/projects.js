@@ -118,6 +118,20 @@ const projects = [
       githubSrc: "https://github.com/hyomiTheTech/crypto_alarm",
     },
   },
+  {
+    projectName: "HYOMI GATSBY",
+    imgSrc: "./assets/images/project-image/hyomi-gatsby/hyomi-gatsby-image.png",
+    shortDescription: "Web Application",
+    modalProperties: {
+      name: "HYOMI GATSBY",
+      images: ["https://media.giphy.com/media/g7TaBuzwOPgbI9rz9h/giphy.gif"],
+      techStack: "Gatsby JS, Graphql, React",
+      description:
+        "A super fun Gatsby JS tutorial by The Net Ninja. Created a static website using Gatsby to learn the latest Static Site Generator. Created content mesh using graphql and its several plugins. Optimized images for the website to render the appropriate images for different devices to efficiently lazy load images to speed initial page load and save bandwidth.",
+      site: "https://peaceful-mestorf-ed7b33.netlify.app/",
+      githubSrc: "https://github.com/hyomiTheTech/hyomi_gatsby",
+    },
+  },
 ];
 
 export default projects;
