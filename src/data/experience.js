@@ -1,27 +1,27 @@
 const EXPERIENCE_DATA = [
   {
     index: 1,
-    employer: "Vegas Tech Guild (Tech Community)",
-    date: "Jul 2021 - Current",
-    position: "Organizer/Founder",
+    employer: "cove.tool",
+    date: "Mar 2022 - Present",
+    position: "Frontend Developer",
     description:
-      "Vegas Tech Guild is a tech meetup group I organized to create vibrant tech community in Las Vegas and collaborate to create exciting applications. Currently, we have over 70 members, and we are continuing our discussions on creating applications utilizing latest technologies for the people and non-profit organizations in Las Vegas.",
+      "As a frontend engineer at climate tech SaaS company covetool, I've contributed to the development of drawingtool, a 3D building modeling tool. Utilizing React and three.js, I've implemented features, optimized performance, and created interactive user interfaces. Collaborating with cross-functional teams, I've helped architects, engineers, and builders make data-driven decisions for sustainable building design. My work on drawingtool has been instrumental in reducing the carbon footprint of the built environment and promoting energy efficiency.",
   },
   {
     index: 2,
+    employer: "Self-Employed",
+    date: "July 2020 –  Nov 2021",
+    position: "Cryptocurrency Analyst/Trader",
+    description:
+      "Leveraging my finance degree and past experience as a crypto trader/analyst, I capitalized on the growing cryptocurrency market, confidently managing my family's $135,000 investment. Within a year and a half, I grew it to $800,000, benefiting my parents financially and deepening my knowledge of web3 technologies and investment strategies. This journey expanded my understanding of blockchain, decentralized applications, and digital asset management, fueling my passion for the evolving world of cryptocurrency and web3 technology.",
+  },
+  {
+    index: 3,
     employer: "Atomic.dev",
     date: "Apr 2020 - Oct 2020",
     position: "Remote Frontend Developer Intern",
     description:
-      "Atomic.dev is a startup creating a low-code SaaS platform. I worked as a remote Front-End developer and developed a multi-page web low-code development platform using React, HTML, and CSS. I also took the lead on reorganizing existing React states by implementing Redux. One of the primary tasks I was assigned to was converting legacy jQuery code into Vanilla Javascript code and integrated it into the main React platform.",
-  },
-  {
-    index: 3,
-    employer: "Hack for LA (Open Source)",
-    date: "Mar 2020 - Jul 2020",
-    position: "Lead Full-Stack Developer",
-    description:
-      "Hack for LA is a project of Code for America and is its official Los Angeles chapter. I contributed to an open-source project, Lucky Parking, as a Lead Front-end Developer. I led a group of software engineers and collaborated with data scientists to create an interactive map platform that dynamically renders various processed information about parking spaces for the city of Los Angeles.",
+      "As a remote Front-End developer for Atomic.dev, I played a key role in building a cutting-edge low-code SaaS platform. Leveraging my expertise in React, HTML, and CSS, I developed a multi-page web application that streamlined low-code development. Additionally, I spearheaded the reorganization of existing React states by implementing Redux. To ensure a seamless user experience, I was also tasked with converting legacy jQuery code into Vanilla Javascript, and successfully integrated it into the main React platform.",
   },
   {
     index: 4,
@@ -29,15 +29,15 @@ const EXPERIENCE_DATA = [
     date: "Aug 2018 – May 2019",
     position: "Equity Trader",
     description:
-      "After a decent success in cryptocurrency trading, I went to Wall Street to challenge myself to professional equity trading. I was introduced to various complex trading techniques and strategies. My primary duties include, but are not limited to, forecasting target price of equities by building financial modeling, monitoring order books and options activities, and assessing macroeconomic and market conditions by monitoring economic indicators and analyst reports. ",
+      "Following my initial success in cryptocurrency trading, I sought to challenge myself in the fast-paced world of professional equity trading on Wall Street. During this time, I gained exposure to a variety of advanced trading techniques and strategies. As a result, I became proficient in tasks such as forecasting target prices of equities by building complex financial models, monitoring order books and options activities, and analyzing macroeconomic and market conditions by closely monitoring economic indicators and analyst reports.",
   },
   {
     index: 5,
-    employer: "Cryptocurrency Exchange",
+    employer: "Self-Employed",
     date: "Mar 2017 – Apr 2018",
     position: "Cryptocurrency Analyst/Trader",
     description:
-      "One of the most important events in my life. I analyzed and traded cryptocurrencies with an initial investment of $25k, which I borrowed from mom. After studying and constant monitoring 20 different cryptocurrencies and performing technical analysis, I achieved over 2,000% return and cashed out $600k a year later. Not only did this event reward me financially, but also rewarded me with powerful motivation to change my career in tech. ",
+      "Undoubtedly one of the most significant events in my life, I embarked on a journey to analyze and trade cryptocurrencies with an initial investment of $25,000, which I had borrowed from my mother. Through tireless study and constant monitoring of 20 different cryptocurrencies, coupled with technical analysis, I achieved an astounding return of over 2,000%, ultimately cashing out $600,000 a year later. Not only did this event provide me with financial reward, but it also served as a powerful motivator for me to transition my career into the tech industry.",
   },
 ];
 
