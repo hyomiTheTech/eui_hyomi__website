@@ -10,7 +10,7 @@ const EXPERIENCE_DATA = [
   {
     index: 2,
     employer: "Self-Employed",
-    date: "Oct 2020 –  Nov 2021",
+    date: "July 2020 –  Nov 2021",
     position: "Cryptocurrency Analyst/Trader",
     description:
       "Leveraging my finance degree and past experience as a crypto trader/analyst, I capitalized on the growing cryptocurrency market, confidently managing my family's $135,000 investment. Within a year and a half, I grew it to $800,000, benefiting my parents financially and deepening my knowledge of web3 technologies and investment strategies. This journey expanded my understanding of blockchain, decentralized applications, and digital asset management, fueling my passion for the evolving world of cryptocurrency and web3 technology.",
