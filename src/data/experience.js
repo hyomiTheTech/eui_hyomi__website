@@ -5,7 +5,7 @@ const EXPERIENCE_DATA = [
     date: "Mar 2022 - Present",
     position: "Frontend Developer",
     description:
-      "As a frontend engineer at climate tech SaaS company covetool, I've contributed to the development of drawingtool, a 3D building modeling tool. Utilizing React and three.js, I've implemented features, optimized performance, and created interactive user interfaces. Collaborating with cross-functional teams, I've helped architects, engineers, and builders make data-driven decisions for sustainable building design. My work on drawingtool has been instrumental in reducing the carbon footprint of the built environment and promoting energy efficiency.",
+      "As a frontend engineer at climate tech SaaS company cove.tool, I've contributed to the development of drawing.tool, a 3D building modeling tool. Utilizing React and three.js, I've implemented features, optimized performance, and created interactive user interfaces. Collaborating with cross-functional teams, I've helped architects, engineers, and builders make data-driven decisions for sustainable building design. My work on drawing.tool has been instrumental in reducing the carbon footprint of the built environment and promoting energy efficiency.",
   },
   {
     index: 2,
@@ -37,7 +37,7 @@ const EXPERIENCE_DATA = [
     date: "Mar 2017 – Apr 2018",
     position: "Cryptocurrency Analyst/Trader",
     description:
-      "Undoubtedly one of the most significant events in my life, I embarked on a journey to analyze and trade cryptocurrencies with an initial investment of $25,000, which I had borrowed from my mother. Through tireless study and constant monitoring of 20 different cryptocurrencies, coupled with technical analysis, I achieved an astounding return of over 2,000%, ultimately cashing out $600,000 a year later. Not only did this event provide me with financial reward, but it also served as a powerful motivator for me to transition my career into the tech industry.",
+      "Undoubtedly one of the most significant events in my life, I embarked on a journey to analyze and trade cryptocurrencies with an initial investment of $25,000, which I had borrowed from my mom. Through tireless study and constant monitoring of 20 plus different cryptocurrencies, coupled with technical analysis, I achieved an astounding return of over 2,000%, ultimately cashing out $600,000 a year later. Not only did this event provide me with financial reward, but it also served as a powerful motivator for me to transition my career into the tech industry.",
   },
 ];
 
