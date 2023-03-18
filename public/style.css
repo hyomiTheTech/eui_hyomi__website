@@ -92,9 +92,10 @@
 .landing-page {
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    fixed url("./assets/images/mainImage.webp");
+    url("./assets/images/mainImage.webp");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -840,9 +841,10 @@
 .contact {
   height: 50rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    fixed url("./assets/images/mainImage.webp");
+    url("./assets/images/mainImage.webp");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   display: grid;
   grid-template-rows: 2fr 6fr 4fr 1fr 1.5fr;
   grid-template-columns: 1fr 3fr 1fr;
