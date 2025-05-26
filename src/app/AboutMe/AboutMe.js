@@ -29,15 +29,15 @@ const AboutMe = () => {
         data-aos-duration="1000"
         data-aos-once
       >
-        Hello, my name is David Kim, and I am a passionate software engineer
-        dedicated to creating innovative applications that enrich our daily
-        lives. With experience building full-stack web and mobile applications
-        using a variety of Javascript-based libraries and frameworks, I bring a
-        wealth of knowledge and creativity to every project. As a tech
-        enthusiast, I remain at the forefront of emerging technologies that are
-        changing the world for the better. Nothing brings me greater joy than
-        exploring how the world is evolving through technological advancements
-        and being a part of this exciting journey.
+        Hey there, I'm David Kim, a passionate software engineer dedicated to
+        creating innovative applications that positively impact our daily lives.
+        With extensive experience building full-stack web and mobile
+        applications using modern JavaScript-based libraries and frameworks, I
+        bring creativity, expertise, and enthusiasm to every project I
+        undertake. As a tech enthusiast, I continually explore emerging
+        technologies that shape our world for the better. There's nothing I
+        enjoy more than being part of the exciting journey of technological
+        advancement and contributing to meaningful innovations.
       </p>
     </section>
   );
