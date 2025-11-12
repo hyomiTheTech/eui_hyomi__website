@@ -29,15 +29,19 @@ const AboutMe = () => {
         data-aos-duration="1000"
         data-aos-once
       >
-        Hey there, I'm David Kim, a passionate software engineer dedicated to
-        creating innovative applications that positively impact our daily lives.
-        With extensive experience building full-stack web and mobile
-        applications using modern JavaScript-based libraries and frameworks, I
-        bring creativity, expertise, and enthusiasm to every project I
-        undertake. As a tech enthusiast, I continually explore emerging
-        technologies that shape our world for the better. There's nothing I
-        enjoy more than being part of the exciting journey of technological
-        advancement and contributing to meaningful innovations.
+        Hey there, I'm David Kim, a software engineer with a passion for
+        building data-driven applications that solve real-world problems. My
+        journey began in quantitative finance, where I discovered my love for
+        working with data and statistical analysis. As a software engineer, I've
+        channeled that passion into creating impactful tools—from AI-powered
+        chatbots using RAG technology to automation systems that process and
+        analyze complex datasets. I'm drawn to projects that combine analytical
+        thinking with technical execution, whether it's optimizing application
+        performance or building systems that extract meaningful insights from
+        data. Currently preparing to pursue graduate studies in data science to
+        deepen my computational and analytical capabilities, I'm excited about
+        the journey ahead and the opportunity to contribute to innovations at
+        the intersection of data and technology.
       </p>
     </section>
   );
