@@ -11,7 +11,7 @@ const LogoContainer = () => {
         alt="github logo"
       />
       <Logo
-        href="https://www.linkedin.com/in/euihyun-david-kim/"
+        href="https://www.linkedin.com/in/hyomithetech/"
         src="./assets/images/logos/linkedin.svg"
         alt="linkedin logo"
       />
